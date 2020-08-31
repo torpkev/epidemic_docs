@@ -1,37 +1,25 @@
-## Welcome to GitHub Pages
+Epidemic allows you to add illness and injury to your server, making survival that much more difficult.
 
-You can use the [editor on GitHub](https://github.com/torpkev/epidemic_docs/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Whether you want to have your players risk a cut or broken leg from being attacked or from a fall, to food poisoning when they eat, to a light fever all the way up to a full blown plague that causes blindness and confusion, Epidemic has you covered.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Epidemic is highly configurable, allowing you to create your own illnesses and injuries, letting you decide how likely a player is to suffer and how badly. You can even decide if you want the illness to be contagious or if a broken leg can develop into an infection! Potion effects such as slowness, blindness and confusion can all be added to an illness, making the player work to stay alive. Real consequences to a fall beyond losing a half-heart of health means real survival.
 
-### Markdown
+With Epidemic on your server, your players can even hide their symptoms and infect other players, adding a level of biological warfare.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Each injury or illness can have its own cure added, so if your player suffers a broken leg, no problem - they can craft a splint, or travel into town and buy one from a store.
 
-```markdown
-Syntax highlighted code block
+Players in op or with epidemic.invincible cannot gain injury/illness.
 
-# Header 1
-## Header 2
-### Header 3
+[Upgrading to 1.6.5?  Read here first!!](https://torpkev.github.com/epidemic_docs/upgrading165)
 
-- Bulleted
-- List
+[Commands](https://torpkev.github.com/epidemic_docs/commands)
 
-1. Numbered
-2. List
+[Permissions](https://torpkev.github.com/epidemic_docs/permissions)
 
-**Bold** and _Italic_ and `Code` text
+[Ailments](https://torpkev.github.com/epidemic_docs/ailments)
 
-[Link](url) and ![Image](src)
-```
+[Remedies](https://torpkev.github.com/epidemic_docs/remedies)
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+[Thirst](https://torpkev.github.com/epidemic_docs/thirst)
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/torpkev/epidemic_docs/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+[Temperature](https://torpkev.github.com/epidemic_docs/temperature)

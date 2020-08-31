@@ -1,6 +1,8 @@
 
 ## Temperature
 
+[Home](https://torpkev.github.io/epidemic_docs)
+
 When enabled in the config file, temperature will be applied to each player in-game. Being around too much of a temperature extreme for too long will cause the player to have negative effects.
 
 Temperature is calculated into a simple Level: COLD, NORMAL, HOT.

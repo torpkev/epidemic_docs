@@ -11,7 +11,7 @@ Please note that when converting from a pre-1.6.5 version, the Ailments and your
 
 You will be required to restart the server one more time after the conversion in order to load the updated files in correctly.
 
-Version 1.6.5 contained a nearly complete rewrite of every major function inside the plugin. This has led to a number of changes in how the code works, the major ones of which are outlined below. However, as with any major update, certain things may no longer work quite as you expect. If you have any questions or concerns with the update process, please reach out to me on Discord. https://discord.gg/7a47xSX
+Version 1.6.5 contained a nearly complete rewrite of every major function inside the plugin. This has led to a number of changes in how the code works, the major ones of which are outlined below. However, as with any major update, certain things may no longer work quite as you expect. If you have any questions or concerns with the update process, please reach out to me on Discord. [Discord Link](https://discord.gg/7a47xSX)
 
 I'll be more than happy to explain the ailment/remedy changes in more detail, or even help out putting together your ailments and remedies.
 

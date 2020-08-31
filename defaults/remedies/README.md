@@ -14,7 +14,7 @@ You can view the default remedies below:
 
 [Bandage](https://torpkev.github.io/epidemic_docs/defaults/remedies/bandage.yml)
 
-[Boiled Water](https://torpkev.github.io/epidemic_docs/defaults/remedies/boiled_water.yml)
+[Boiled Water (multi-use)](https://torpkev.github.io/epidemic_docs/defaults/remedies/boiled_water.yml)
 
 [Bubonic Plague Cure](https://torpkev.github.io/epidemic_docs/defaults/remedies/bubonic_cure.yml)
 

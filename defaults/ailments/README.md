@@ -6,7 +6,7 @@ Ailments in Epidemic are illnesses and injuries the player can get.  They can be
 
 You can see more information about Ailments here: [Ailment Information](https://torpkev.github.io/epidemic_docs/ailments)
 
-Epidemic creates default ailment files for the plugin to work right out the box, they are store in the Epidemic/ailments folder.  However, it is strongly recommended that you either modify or completely recreate custom ailment files that best suit your server.  You can see more information on creating your own ailments here: [Creating new ailments](https://torpkev.github.io/epidemic_docs/newailments)
+Epidemic creates default ailment files for the plugin to work right out the box, they are stored in the Epidemic/ailments folder.  However, it is strongly recommended that you either modify or completely recreate custom ailment files that best suit your server.  You can see more information on creating your own ailments here: [Creating new ailments](https://torpkev.github.io/epidemic_docs/newailments)
 
 You can view the default ailments below:
 

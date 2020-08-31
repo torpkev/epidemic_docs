@@ -1,6 +1,6 @@
 ## **Ailments**
 
-[Home](https://torpkev.github.com/epidemic_docs)
+[Home](https://torpkev.github.io/epidemic_docs)
 
 Ailments are any infectious/non-infectious illness or injury that can be applied to a player.  They can be set to be contagious or affect only the player who has it.  They can also lead to secondary ailments which afflict the player
 after a set amount of time if the original ailment isn't cured in time.  You can even set the ailment to be hidden from the player for a set amount of time, during which, they could be infecting any number of other players.

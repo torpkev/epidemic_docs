@@ -9,9 +9,13 @@ The best way to do this is with custom ailments.  To create a new custom ailment
 Some things to consider before creating your ailment:
 
 1) Do you want this ailment to be caused by infectious means, non-infectious means or both?  Infectious means would allow the ailment to be caused naturally, non-infectious would be caused by things like fall damage.
+
 2) Do you want this ailment to be contagious?  Do you want other players to be able to catch it?  Do you want the player to even know they're carrying the ailment right away?  You can have symptoms not show for a set time, during which the player could be passing the ailment on.
+
 3) What do you want the ailment to actually 'do' - should it cause damage?  Slow the player down? Cause hallucinations, display a vomit effect etc.
+
 4) Should the ailment get worse?  Secondary ailments allow you to apply another ailment after a set amount of time (for example, a broken leg might lead to gangrene if not treated)
+
 5) How do you want the player to recover?  Or should they?  You can make fatal ailments that will continually hurt the player until they finally die.
 
 Once you've answered these questions, you can head over to the [ailments page](https://torpkev.github.io/epidemic_docs/ailments) and review all the configuration options for creating your very own ailment.  Don't forget, you'll probably need to create some kind of Remedy (unless you're going full-on evil and want that fatal non-curable ailment)

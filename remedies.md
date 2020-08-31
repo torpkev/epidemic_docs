@@ -1,5 +1,7 @@
 ## Remedies
 
+[Home](https://torpkev.github.io/epidemic_docs)
+
 Remedies are items in-game that can be used to affect the player with one or more of a number of player effects including curing ailments, providing potion effects, modifying health/hunger/thirst, providing symptom relief and more.
 
 The primary purpose of a Remedy is to cure a player of an ailment.  For example, a bandage that would cure the player of an open wound.  However, remedies are NOT tied directly to ailments, so you could have one remedy that cures multiples (a cure-all), or you could have multiple remedies that cure a single ailment or anywhere in between.

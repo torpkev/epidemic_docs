@@ -25,3 +25,5 @@ Players in op or with epidemic.invincible cannot gain injury/illness.
 [Thirst](https://torpkev.github.io/epidemic_docs/thirst)
 
 [Temperature](https://torpkev.github.io/epidemic_docs/temperature)
+
+[Default Files](https://torpkev.github.io/epidemic_docs/defaults)

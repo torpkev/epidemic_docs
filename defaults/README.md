@@ -1,5 +1,7 @@
 ## Default Files
 
+[Home](https://torpkev.github.io/epidemic_docs)
+
 Epidemic has a config.yml file created in the Epidemic plugin folder which can be modified as needed.  However, the key "v" should never be changed manually.  It looks like this:
 
     v: 1.6.5

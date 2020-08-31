@@ -1,6 +1,8 @@
 
 ## 1.6.5 Update Notes
 
+[Home](https://torpkev.github.io/epidemic_docs)
+
 **Important changes to game mechanics, please read in full before updating**
 
 If you're updating from a pre-1.6.5 install of Epidemic, there are several major changes to the mechanics of Epidemic that should be considered BEFORE upgrading. If you are a new user, or if you're doing a fresh install, then please read the below, but don't worry about any of the conversion changes - there is a whole set of pre-configured ailments and remedies you can use, modify or even discard and create your own.

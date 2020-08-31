@@ -10,7 +10,7 @@ Each injury or illness can have its own cure added, so if your player suffers a 
 
 Players in op or with epidemic.invincible cannot gain injury/illness.
 
-[Upgrading to 1.6.5?  Read here first!!](https://torpkev.github.com/epidemic_docs/upgrading165)
+[Upgrading to 1.6.5?  Read here first!!](https://torpkev.github.io/epidemic_docs/upgrading165)
 
 [Commands](https://torpkev.github.io/epidemic_docs/commands)
 

@@ -8,7 +8,7 @@ The best way to do this is with custom ailments.  To create a new custom ailment
 
 Some things to consider before creating your ailment:
 
-1) Do you want this ailment to be caused by infectious means, non-infectious means or both?  Infectious means would allow the ailment to be caused naturally, non-infectious would be caused by things like fall damage.
+1) Do you want this ailment to be caused by infectious reasons, non-infectious reasons or both?  Infectious reasons would allow the ailment to be caused naturally, non-infectious would be caused by things like fall damage.
 
 2) Do you want this ailment to be contagious?  Do you want other players to be able to catch it?  Do you want the player to even know they're carrying the ailment right away?  You can have symptoms not show for a set time, during which the player could be passing the ailment on.
 

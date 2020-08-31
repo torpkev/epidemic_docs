@@ -1,5 +1,7 @@
 ## Thirst
 
+[Home](https://torpkev.github.io/epidemic_docs)
+
 When enabled in the config file, thirst will place a bar at the top of the players screen when they log in.  This
 bar will record the players thirst, the higher the bar, the higher the players hydration is.  If the bar drops
 to 0, the player is dehydrated and will begin to take damage.

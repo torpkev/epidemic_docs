@@ -1,6 +1,7 @@
 
 ## Commands
 
+[Home](https://torpkev.github.io/epidemic_docs)
   
 
 Epidemic uses 7 base commands

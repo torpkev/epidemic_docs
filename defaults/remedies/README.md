@@ -1,5 +1,7 @@
 ## Default Remedies
 
+[Home](https://torpkev.github.io/epidemic_docs)
+
 Remedies in Epidemic are in-game items (including food or drink) that can be used to provide some kind of additional player effect.  These effects include curing ailments, modifying player thirst, health, hunger, providing potion effects and providing symptom relief.
 
 You can see more information about Remedies here: [Remedy Information](https://torpkev.github.io/epidemic_docs/remedies)

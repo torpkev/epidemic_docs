@@ -1,5 +1,7 @@
 ## Permissions
 
+[Home](https://torpkev.github.io/epidemic_docs)
+
 **epidemic.admin** - Used for admin functions, also gives access to all other permissions EXCEPT for epidemic.invincible
 
 **epidemic.infect** - Used for the /infect command

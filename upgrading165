@@ -1,3 +1,4 @@
+
 ## 1.6.5 Update Notes
 
 **Important changes to game mechanics, please read in full before updating**
@@ -52,6 +53,6 @@ As cures have been deprecated and are automatically converted, there is no need 
 
 The following permission changes have been made, however, the old permissions can be still be used, but are considered deprecated and WILL be removed in an upcoming update.
 
-epidemic.cures.take has been replaced with epidemic.remedy.take
-
-epidemic.cures.display has been replaced with epidemic.recipes.display
+    epidemic.cures.take has been replaced with epidemic.remedy.take
+    
+    epidemic.cures.display has been replaced with epidemic.recipes.display

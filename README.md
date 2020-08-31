@@ -12,14 +12,14 @@ Players in op or with epidemic.invincible cannot gain injury/illness.
 
 [Upgrading to 1.6.5?  Read here first!!](https://torpkev.github.com/epidemic_docs/upgrading165)
 
-[Commands](https://torpkev.github.com/epidemic_docs/commands)
+[Commands](https://torpkev.github.io/epidemic_docs/commands)
 
-[Permissions](https://torpkev.github.com/epidemic_docs/permissions)
+[Permissions](https://torpkev.github.io/epidemic_docs/permissions)
 
-[Ailments](https://torpkev.github.com/epidemic_docs/ailments)
+[Ailments](https://torpkev.github.io/epidemic_docs/ailments)
 
-[Remedies](https://torpkev.github.com/epidemic_docs/remedies)
+[Remedies](https://torpkev.github.io/epidemic_docs/remedies)
 
-[Thirst](https://torpkev.github.com/epidemic_docs/thirst)
+[Thirst](https://torpkev.github.io/epidemic_docs/thirst)
 
-[Temperature](https://torpkev.github.com/epidemic_docs/temperature)
+[Temperature](https://torpkev.github.io/epidemic_docs/temperature)

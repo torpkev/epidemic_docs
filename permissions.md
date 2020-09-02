@@ -15,3 +15,5 @@
 **epidemic.bypass** - Used for the /epidemic bypass command
 
 **epidemic.invincible** - Makes the player immune to any ailments/symptoms/temp/thirst
+
+**epidemic.craft.<remedy key** - Permission to craft a particular remedy.  Example: epidemic.craft.splint

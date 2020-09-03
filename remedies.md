@@ -129,7 +129,7 @@ List of ailments that the remedy cures
     cures:
       - wound
 
-Effects to add - matches on potion effect type, then adds the time to the number of seconds left on the timer (IF the potion effect is already active, if not, will set it as a new effect for the number of seconds).  Will set the amplifier to the amplifier number here IF the current amplifier is < than this (or not set)
+Effects to add - matches on potion effect type, then adds the time to the number of seconds left on the timer (IF the potion effect is already active, if not, will set it as a new effect for the number of seconds).  Will set the amplifier to the amplifier number here IF the current amplifier is < than this (or not set).  Potion effects information can be found here: [Potion Effects](https://torpkev.github.io/epidemic_docs/potioneffects)
 
     add_effects:
       WEAKNESS:
@@ -137,7 +137,7 @@ Effects to add - matches on potion effect type, then adds the time to the number
         amplifier: 1
 
 
-Effects to remove - matches on potion effect type, then removes the time from the number of seconds left on the timer, and removes amplifier from current amplifier.  If number of seconds is <= 0 or if amplified <= 0, then the potion effect is completely removed.
+Effects to remove - matches on potion effect type, then removes the time from the number of seconds left on the timer, and removes amplifier from current amplifier.  If number of seconds is <= 0 or if amplified <= 0, then the potion effect is completely removed.  Potion effects information can be found here: [Potion Effects](https://torpkev.github.io/epidemic_docs/potioneffects)
 
     remove_effects:
       SLOW:

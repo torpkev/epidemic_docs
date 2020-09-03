@@ -225,6 +225,7 @@ For ailment causes triggered by player damage (fall, explosion, injury etc.) if 
 
 Ailment effects is a group of settings that apply potion effects on to the player every time symptoms are applied to the player.  You can add multiple potion effects, taking care of the spacing so time and amplifier are correctly
 nested under each effect.  Ailment effects is the parent item, the potion effect is a child of that, and time and amplifier is a child of the potion effect.  Time is the number of seconds to apply it for, and amplifier is how strong the effect is.
+Ailment effects information can be found here: [Potion Effects](https://torpkev.github.io/epidemic_docs/potioneffects)
 
     ailment_effects:
       SLOW:

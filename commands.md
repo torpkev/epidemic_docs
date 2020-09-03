@@ -4,7 +4,7 @@
 [Home](https://torpkev.github.io/epidemic_docs)
   
 
-Epidemic uses 7 base commands
+Epidemic commands are as listed below
 
   
 
@@ -65,3 +65,7 @@ Epidemic uses 7 base commands
     
     /temp info - Will display the players thermometer with additional information. Requires epidemic admin or epidemic.temp.info
 
+/epirecipes (or /er) can be used to display remedies. (Does the same thing as /epidemic.recipes) - Requires epidemic.recipes.display
+
+    /epirecipes - Will display the available remedies. Requires epidemic.recipes.display
+    

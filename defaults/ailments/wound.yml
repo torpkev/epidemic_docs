@@ -193,7 +193,7 @@ caused_by_entity: []
 # modifier and added to the chance of ailment.  Example, a player falls, taking 2.5 hearts
 # of damage, and triggering an ailment with a non-infectious chance of 50 and damage_chance_modifier
 # of 5.  The new non-infectious chance would be 50 + (2.5 * 5) = 50 + 12.5 = 62.5 = 63 (chance is always rounded)
-damage_chance_modifier: 10;
+damage_chance_modifier: 10
 
 # Potion effects to apply for symptoms.  Should include the
 # potion effect type, time and amplifier

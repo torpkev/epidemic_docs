@@ -29,3 +29,5 @@ Players in op or with epidemic.invincible cannot gain injury/illness.
 [Default Files](https://torpkev.github.io/epidemic_docs/defaults)
 
 [Creating your own Ailments](https://torpkev.github.io/epidemic_docs/newailments)
+
+[Looking to hook into Epidemic?  JavaDocs are here](https://torpkev.github.io/epidemic_docs/javadocs)  (or visit us in Discord)

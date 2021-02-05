@@ -20,28 +20,28 @@ infectious: false
 
 # Chance of getting the ailment via infectious methods
 # Chance is out of 1000.  Each time Epidemic checks for
-# infection, it generates a random number between 1 and 1000
+# infection, it generates a random number between 1 and 10000
 # in the example below, if that number <= 100, then you would
 # get the ailment.  Infection checks happen once per minute
-# so a 100 chance would be a 1/10 chance every minute
+# so a 100 chance would be a 1/100 chance every minute
 infectious_chance: 0
 
 # Chance of getting the ailment via non-infectious methods (ie. falling)
-# This is also calculated from 1-1000 random number.  However, immunity
+# This is also calculated from 1-10000 random number.  However, immunity
 # modifiers will not alter this chance.
 non_infectious_chance: 7500
 
 # Chance of getting the ailment boost amount from other contagious players
 # Adds this amount to the infectious chance.  So if we had an infectious_chance
 # of 100, with a contagious player nearby with a boost of 250, it would jump to
-# 350 every minute. So a random number of 1-1000 would now be <= 350 would
+# 350 every minute. So a random number of 1-10000 would now be <= 350 would
 # get you sick instead of the 100
 contagious_chance_boost: 0
 
 # Maximum Immunity amount - This removes your chance of getting sick.
 # So if you had an infectious chance of 100 and a max_immunity of 90,
-# it would be 100-90 = 10.  So your 1-1000 random number with <= 100
-# leading to sickness would now be 1-1000 with <= 10 to get sick
+# it would be 100-90 = 10.  So your 1-10000 random number with <= 100
+# leading to sickness would now be 1-10000 with <= 10 to get sick
 # (assuming you have max'd out your immunity)
 max_immunity: 0
 

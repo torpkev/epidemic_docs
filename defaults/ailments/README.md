@@ -16,6 +16,8 @@ You can view the default ailments below:
 
 [Burn](https://torpkev.github.io/epidemic_docs/defaults/ailments/burn.yml)
 
+[Common Cold](https://torpkev.github.io/epidemic_docs/defaults/ailments/commoncold.yml)
+
 [Gangrene](https://torpkev.github.io/epidemic_docs/defaults/ailments/gangrene.yml)
 
 [Rabies](https://torpkev.github.io/epidemic_docs/defaults/ailments/rabies.yml)

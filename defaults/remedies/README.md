@@ -22,6 +22,10 @@ You can view the default remedies below:
 
 [Cooling Compress](https://torpkev.github.io/epidemic_docs/defaults/remedies/cooling_compress.yml)
 
+[Cold Remedy](https://torpkev.github.io/epidemic_docs/defaults/remedies/coldremedy.yml)
+
+[Goop](https://torpkev.github.io/epidemic_docs/defaults/remedies/goop.yml)
+
 [Rabies Cure](https://torpkev.github.io/epidemic_docs/defaults/remedies/rabies_cure.yml)
 
 [Snow-melt Water](https://torpkev.github.io/epidemic_docs/defaults/remedies/snowmelt.yml)

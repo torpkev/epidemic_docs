@@ -11,7 +11,7 @@
 # to decide if configuration changes should be made between versions.  Modifying
 # it could cause configuration instability when updating versions and will NOT
 # be supported.
-v: 1.6.5
+v: 1.6.8.7
 # Afflicted time is the number of seconds that elapse between checking for
 # infectious illnesses.  Default is 60
 afflicted_time: 60
@@ -27,6 +27,13 @@ clear_ailment_on_death: true
 contagious_radius: 5
 # The height in which you are contagious
 contagious_height: 3
+# This is the number ailment checks are run against, 10000 by default, meaning every
+# time an ailment check is done (scheduled or via an event such as a burn or fall),
+# it checks 1-10000.  If your players random number is <= your ailment chance (either
+# infectious or non-infectious) your player will get sick.  To lower your chances of
+# a player receiving an ailment, you can increase random_chance, or lower the chances
+# in the config file.
+random_chance: 10000
 # ==================================================================================
 # Syringe - THIS WILL BE MOVED TO ITS OWN CONFIG IN A FUTURE VERSION
 # Deprecated in this file as of 1.6.5
@@ -65,7 +72,7 @@ enable_thirst: true
 thirst_seconds: 30
 # List of worlds to not apply thirst to
 prevent_thirst_worlds:
-- 'world_nether'
+- world_nether
 # dirty_water_penalty is a flag to indicate if a penalty should be applied for drinking dirty water
 dirty_water_penalty: true
 # dirty_water_chance is the chance that drinking non-boiled water could cause illness
@@ -76,10 +83,18 @@ dirty_water_chance: 50
 respawn_thirst_level: 20
 # Flag to disable drinking from a cauldron
 disable_cauldron: false
-# Flag to disable water bottles (drinking from a bottle)
-disable_water_bottle: false
 # Flag to disable water bowls (drinking from a pool)
 disable_water_bowl: false
+# Flag to disable drinking water with your hands (drinking from a pool)
+disable_water_hands: false
+# If true, the thirst bar is displayed on screen
+use_thirst_bar: true
+# If true, running /thirst will return thirst text instead of usage
+use_thirst_text: false
+# If true, the player will receive warnings about being thirsty
+display_thirst_warning: true
+# If true, when the player drinks they will receive a notification in the action bar
+display_drink_notification: false
 # ==================================================================================
 # Temperature
 # ==================================================================================

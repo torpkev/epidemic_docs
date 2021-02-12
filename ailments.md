@@ -28,13 +28,13 @@ is infectious.  For example, you can't catch a broken leg.
 
     infectious: false
 
-Infectious chance is the number between 0-10000 for a player getting this ailment via infectious means (not caused by a fall or injury, but instead being around other sick players, or just being unlucky enough to get it).
+Infectious chance is the number between 0-<random_chance in config> for a player getting this ailment via infectious means (not caused by a fall or injury, but instead being around other sick players, or just being unlucky enough to get it).  For example purposes, random_chance = 10000 (default value)
 Every 60 seconds (by default - this number can be modified in the config), each infectious ailment will generate a random number between 0-10000, if that number is <= your infectious chance, you will get that ailment.  Your
 infectious chance can be modified by other things, for example, a person near you with the ailment can boost your chance of getting it, but having an immunity could lower your chance. 
 
     infectious_chance: 0
 
-Non-Infectious chance is the number between 0-10000 for a player getting this ailment via non-infectious means, for example, a fall or burn.  Non-infectious ailments need to be caused by something (covered later in the configuration), and the chance of getting it works the same as infectious.  If the random number generated <= your non-infectious chance, you will get the ailment.  Immunity and being around other contagious players etc. will not impact your non-infectious chance, however, if the damage chance modifier (covered later in the configuration) is set, your chance could increase based on the damage you have received.
+Non-Infectious chance is the number between 0-<random_chance in config> for a player getting this ailment via non-infectious means, for example, a fall or burn.  Non-infectious ailments need to be caused by something (covered later in the configuration), and the chance of getting it works the same as infectious.  If the random number generated <= your non-infectious chance, you will get the ailment.  Immunity and being around other contagious players etc. will not impact your non-infectious chance, however, if the damage chance modifier (covered later in the configuration) is set, your chance could increase based on the damage you have received.
 
     non_infectious_chance: 250
 

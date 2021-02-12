@@ -1,8 +1,6 @@
 ########################################################################################
-# Boiled Water
-# Boiled water is used only to reduce a players thirst.  It does not restore any
-# health/hunger points, or provide any kind of symptom relief or cure any ailments.
-# It is a Furnace crafting item, that provides 0 experience and takes 3 seconds.
+# Cold Remedy
+# Cures the common cold
 ########################################################################################
 
 # Remedy file version

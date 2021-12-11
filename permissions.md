@@ -17,3 +17,5 @@
 **epidemic.invincible** - Makes the player immune to any ailments/symptoms/temp/thirst
 
 **epidemic.craft.REMEDYKEY** - Permission to craft a particular remedy.  Example: epidemic.craft.splint
+
+**epidemic.recipes.display** - Used for the /epidemic recipes command

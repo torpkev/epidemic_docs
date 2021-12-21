@@ -34,6 +34,11 @@ contagious_height: 3
 # a player receiving an ailment, you can increase random_chance, or lower the chances
 # in the config file.
 random_chance: 10000
+
+# If true, prevent_ailment_worldguard_pvp_deny will prevent players receiving symptoms or new ailments
+# while in a WorldGuard region that does not allow PVP
+prevent_ailment_worldguard_pvp_deny: true
+
 # ==================================================================================
 # Syringe - THIS WILL BE MOVED TO ITS OWN CONFIG IN A FUTURE VERSION
 # Deprecated in this file as of 1.6.5

@@ -2,62 +2,62 @@
 <head></head>
 <body>
 <h3>1.7.0 - Bio-Warfare Update</h3>
-
-Use an empty syringe on a player by right clicking them with the syringe in your main hand.
-If the player is sick with an infectious disease, the empty syringe will be replaced with a full syringe of infected blood.
-If the player is not sick, you will receive a full syringe of uninfected blood.
-
-Right clicking a player with a full syringe will inject the blood into the player.  If it is infected blood, there is a chance that the player will become sick with that ailment.  This chance is defined in the ailment file
-
-  Chance is out of the random_chance in the config.yml file - lower numbers have less chance. Set to 0 to never pass on the illness, set to same as random_chance to always pass it on.
-
-  deliberate_transmission_chance: 100000
-
-After right clicking a player with a full syringe, you will receive an empty syringe back
-
+<br/>
+Use an empty syringe on a player by right clicking them with the syringe in your main hand.<br/>
+If the player is sick with an infectious disease, the empty syringe will be replaced with a full syringe of infected blood.<br/>
+If the player is not sick, you will receive a full syringe of uninfected blood.<br/>
+<br/>
+Right clicking a player with a full syringe will inject the blood into the player.  If it is infected blood, there is a chance that the player will become sick with that ailment.  This chance is defined in the ailment file<br/>
+<br/>
+  Chance is out of the random_chance in the config.yml file - lower numbers have less chance. Set to 0 to never pass on the illness, set to same as random_chance to always pass it on.<br/>
+<br/>
+  deliberate_transmission_chance: 100000<br/>
+<br/>
+After right clicking a player with a full syringe, you will receive an empty syringe back<br/>
+<br/>
 <h5>Incubation Chamber</h5>
-
-The incubation chamber can be used to convert a full syringe with an ailment into an infected sample.  Infected samples are used to create infected splash potions and infected arrows.
-(They will also be used in the vaccine process).
-To create an incubation chamber, place an Iron block, then a glass block on top of it, with an iron pressure plate on top of that.
-You MUST be wearing a Hazmat suit in order to use an Incubation Chamber - and to do so, right click the glass block with the full syringe in your right hand.
-You will receive an Infected Sample, and the full syringe will be lost.
-
-Infected arrows work when hitting a player directly.  They are created in batches of 4 - place the infected sample in the crafting table in the top center spot, and 4 arrows below that.
-Infected splash potions are created in the same way, but with a single splash potion in the center spot, and creates a single splash potion.  Splash potions will infect nearby players to where it lands, by default, set to within 3 blocks.
-Players wearing a Hazmat suit will NOT be impacted by a splash potion.
-
+<br/>
+The incubation chamber can be used to convert a full syringe with an ailment into an infected sample.  Infected samples are used to create infected splash potions and infected arrows.<br/>
+(They will also be used in the vaccine process).<br/>
+To create an incubation chamber, place an Iron block, then a glass block on top of it, with an iron pressure plate on top of that.<br/>
+You MUST be wearing a Hazmat suit in order to use an Incubation Chamber - and to do so, right click the glass block with the full syringe in your right hand.<br/>
+You will receive an Infected Sample, and the full syringe will be lost.<br/>
+<br/>
+Infected arrows work when hitting a player directly.  They are created in batches of 4 - place the infected sample in the crafting table in the top center spot, and 4 arrows below that.<br/>
+Infected splash potions are created in the same way, but with a single splash potion in the center spot, and creates a single splash potion.  Splash potions will infect nearby players to where it lands, by default, set to within 3 blocks.<br/>
+Players wearing a Hazmat suit will NOT be impacted by a splash potion.<br/>
+<br/>
 <h5>Hazmat Suit</h5>
-
-The Hazmat suit is required to use an incubation chamber, and will protect the player from any infectious ailments while they're wearing it, however, it is very fragile and there is a high chance it will be destroyed if the player takes any damage.
-The Hazmat suit will protect the player from splash potions, but not from infected arrows.
-To create the Hazmat suit, you have to create a Hazmat Face Plate, and Hazmat material.
-To put the Hazmat suit on, take the helmet and right click anywhere.  To remove, click the Helmet in your Armor slots.
-Even though you have a full suit on when wearing it, you will only receive the helmet back at any time.  The full suit is inside the helmet.
-The full suit is required for protection
+<br/>
+The Hazmat suit is required to use an incubation chamber, and will protect the player from any infectious ailments while they're wearing it, however, it is very fragile and there is a high chance it will be destroyed if the player takes any damage.<br/>
+The Hazmat suit will protect the player from splash potions, but not from infected arrows.<br/>
+To create the Hazmat suit, you have to create a Hazmat Face Plate, and Hazmat material.<br/>
+To put the Hazmat suit on, take the helmet and right click anywhere.  To remove, click the Helmet in your Armor slots.<br/>
+Even though you have a full suit on when wearing it, you will only receive the helmet back at any time.  The full suit is inside the helmet.<br/>
+The full suit is required for protection<br/>
 
 <h5>Gas Mask</h5>
-
+<br/>
 The gas mask, like the Hazmat suit will protect you from infectious ailments, but not as much as the Hazmat suit, and it cannot be used for the Incubation Chamber, however, the gas mask is not as flimsy as the Hazmat Suit, so will not break when you take damage
 
 ---------
 
 <h4>Cure when sleeping</h4>
-
+<br/>
 You can now add a chance to cure the player of an ailment when they sleep.  This chance is out of 1000, with lower numbers having a lower chance.  Set to 0 to never cure while sleeping, or 1000 to always cure from sleeping.  This is in the ailment config file as:
-
-cure_with_sleep_chance: 200
-cure_with_sleep_message: "Some message about being cured"
+<br/>
+cure_with_sleep_chance: 200<br/>
+cure_with_sleep_message: "Some message about being cured"<br/>
 
 ---------
 
 <h4>Ailment caused by weapon</h4>
-
+<br/>
 You can now require a weapon be used to cause an injury such as a wound.  To do so, in the ailment file, set caused_by_weapon_injury as true and caused_by_injury as false.
-
-caused_by_injury: false
-caused_by_weapon_injury: true
-
+<br/>
+caused_by_injury: false<br/>
+caused_by_weapon_injury: true<br/>
+<br/>
 Valid weapons are swords, axes, tridents, arrows, and sticks
 
 ---------
@@ -75,26 +75,26 @@ data (Persistent data in key:value format, example: epidemic_equipment:full_syri
 skull owner (player UUID to use if it is a head)
 amount (Only used if there is a match for material, name, lore, or data), if not entered, assumes 1
 
-recipe:
-  top_left:
-    material: LEATHER
-  top_center:
-    material: LEATHER
-  top_right:
-    material: LEATHER
-  middle_left:
-    material: LEATHER
-  middle_center:
-    material: GLASS_PANE
-  middle_right:
-    material: LEATHER
-  bottom_left:
-    material: IRON_INGOT
-  bottom_center:
-    material: CHARCOAL
-    amount: 3
-  bottom_right:
-    material: IRON_INGOT
+recipe:<br/>
+&nbsp;&nbsp;top_left:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;material: LEATHER<br/>
+&nbsp;&nbsp;top_center:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;material: LEATHER<br/>
+&nbsp;&nbsp;top_right:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;material: LEATHER<br/>
+&nbsp;&nbsp;middle_left:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;material: LEATHER<br/>
+&nbsp;&nbsp;middle_center:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;material: GLASS_PANE<br/>
+&nbsp;&nbsp;middle_right:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;material: LEATHER<br/>
+&nbsp;&nbsp;bottom_left:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;material: IRON_INGOT<br/>
+&nbsp;&nbsp;bottom_center:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;material: CHARCOAL<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;amount: 3<br/>
+&nbsp;&nbsp;bottom_right:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;material: IRON_INGOT<br/>
 
 These enhanced recipes will be used in ALL Epidemic items in future releases
 

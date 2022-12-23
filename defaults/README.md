@@ -1,4 +1,4 @@
-![Epidemic](/images/header.png)
+![Epidemic](../images/header.png)
 
 [Home](https://torpkev.github.io/epidemic_docs)
 

@@ -34,7 +34,7 @@ You have a few options once you have a full syringe of infected blood.
 
 ### Culturing an Infected Sample
 
-To culture a sample, you'll need an Incubation Chamber, a [Hazmat Suit](/protective.md), and at least one infected blood sample
+To culture a sample, you'll need an Incubation Chamber, a [Hazmat Suit](/protective), and at least one infected blood sample
 
 An Incubation Chamber can be constructed using a glass block, an iron block, and a heavy pressure plate.  To create it, place the Iron block, then the glass block on top of that, then the pressure plate on top
 

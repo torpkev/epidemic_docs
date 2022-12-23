@@ -12,32 +12,32 @@ Each injury or illness can have its own cure added, so if your player suffers a 
 
 ## How to Use
 
-- [Commands](https://torpkev.github.io/epidemic_docs/commands.md)
+- [Commands](https://torpkev.github.io/epidemic_docs/commands)
 
-- [Permissions](https://torpkev.github.io/epidemic_docs/permissions.md)
+- [Permissions](https://torpkev.github.io/epidemic_docs/permissions)
 
-- [Ailments](https://torpkev.github.io/epidemic_docs/ailments.md)
+- [Ailments](https://torpkev.github.io/epidemic_docs/ailments)
 
-- [Remedies](https://torpkev.github.io/epidemic_docs/remedies.md)
+- [Remedies](https://torpkev.github.io/epidemic_docs/remedies)
 
-- [Thirst](https://torpkev.github.io/epidemic_docs/thirst.md)
+- [Thirst](https://torpkev.github.io/epidemic_docs/thirst)
 
-- [Temperature](https://torpkev.github.io/epidemic_docs/temperature.md)
+- [Temperature](https://torpkev.github.io/epidemic_docs/temperature)
 
-- [Protective Equipment](https://torpkev.github.io/epidemic_docs/protective.md)
+- [Protective Equipment](https://torpkev.github.io/epidemic_docs/protective)
 
-- [Creating Infected Samples](https://torpkev.github.io/epidemic_docs/infectedsample.md)
+- [Creating Infected Samples](https://torpkev.github.io/epidemic_docs/infectedsample)
 
-- [Infected Arrows & Splash Potions](https://torpkev.github.io/epidemic_docs/infectedequipment.md)
+- [Infected Arrows & Splash Potions](https://torpkev.github.io/epidemic_docs/infectedequipment)
 
 
 ## Questions
 
-Want to create your own ailments?  Some things to keep in mind are [here](https://torpkev.github.io/epidemic_docs/newailments.md)
+Want to create your own ailments?  Some things to keep in mind are [here](https://torpkev.github.io/epidemic_docs/newailments)
 
 This you've made a mistake editing a file? Defaults are [here](https://torpkev.github.io/epidemic_docs/defaults/)
 
-Looking for the placeholders for PlaceholderAPI?  They're available [here](https://torpkev.github.io/epidemic_docs/placeholders.md)
+Looking for the placeholders for PlaceholderAPI?  They're available [here](https://torpkev.github.io/epidemic_docs/placeholders)
 
 Looking to use the API?  Javadocs are [here](https://torpkev.github.io/epidemic_docs/javadocs/)
 

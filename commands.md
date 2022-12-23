@@ -1,12 +1,10 @@
+![Epidemic](/images/header.png)
+
+[Home](https://torpkev.github.io/epidemic_docs)
 
 ## Commands
 
-[Home](https://torpkev.github.io/epidemic_docs)
-  
-
 Epidemic commands are as listed below
-
-  
 
 /epidemic (or /epi) is the main command for the program, its usage is dependent on permission:
 

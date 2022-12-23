@@ -5,6 +5,9 @@
 # It is a Furnace crafting item, that provides 0 experience and takes 3 seconds.
 ########################################################################################
 
+# Remedy file version
+v: 1.0
+
 # Unique key for the custom cure
 key: "boiled_water"
 

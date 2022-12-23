@@ -1,6 +1,5 @@
 ########################################################################################
 # Cold Remedy
-# Cures the common cold
 ########################################################################################
 
 # Remedy file version
@@ -84,7 +83,7 @@ item_consumed: true
 
 # List of ailments that the remedy cures
 cures:
-  - common_cold
+  - commoncold
 
 # Effects to add - matches on potion effect type, then adds the time to the number
 # of seconds left on the timer (IF the potion effect is already active, if not, will

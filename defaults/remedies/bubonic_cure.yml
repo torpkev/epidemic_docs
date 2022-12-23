@@ -7,6 +7,9 @@
 # and provides 60 seconds of symptom relief
 ########################################################################################
 
+# Remedy file version
+v: 1.0
+
 # Unique key for the custom cure
 key: "bubonic_cure"
 

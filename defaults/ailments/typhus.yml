@@ -22,12 +22,12 @@ display_name: "Typhus"
 infectious: true
 
 # Chance of getting the ailment via infectious methods
-# Chance is out of 10000.  Each time Epidemic checks for
-# infection, it generates a random number between 1 and 10000
-# in the example below, if that number <= 100, then you would
+# Chance is out of 100000.  Each time Epidemic checks for
+# infection, it generates a random number between 1 and 100000
+# in the example below, if that number <= 200, then you would
 # get the ailment.  Infection checks happen once per minute
-# so a 100 chance would be a 1/100 chance every minute
-infectious_chance: 50
+# so a 200 chance would be a 200/100000, or 2/1000 chance every minute
+infectious_chance: 200
 
 # Chance of getting the ailment via non-infectious methods (ie. falling)
 # This is also calculated from 1-10000 random number.  However, immunity
@@ -36,17 +36,23 @@ non_infectious_chance: 0
 
 # Chance of getting the ailment boost amount from other contagious players
 # Adds this amount to the infectious chance.  So if we had an infectious_chance
-# of 100, with a contagious player nearby with a boost of 250, it would jump to
-# 350 every minute. So a random number of 1-1000 would now be <= 350 would
-# get you sick instead of the 100
-contagious_chance_boost: 500
+# of 200, with a contagious player nearby with a boost of 1980, it would jump to
+# 20000 every minute. So a random number of 1-10000 would now be <= 20000 would
+# get you sick instead of the 200, so 2000/10000 or 1/5 chance
+contagious_chance_boost: 1980
+
+# Chance of contracting the infectious ailment when deliberately injected
+# Chance is out of the random_chance in config.yml - To always have the player
+# get the ailment when injected, set to same as random_chance, lower numbers
+# have less chance
+deliberate_transmission_chance: 100000
 
 # Maximum Immunity amount - This removes your chance of getting sick.
 # So if you had an infectious chance of 100 and a max_immunity of 90,
 # it would be 100-90 = 10.  So your 1-10000 random number with <= 100
 # leading to sickness would now be 1-10000 with <= 10 to get sick
 # (assuming you have max'd out your immunity)
-max_immunity: 800
+max_immunity: 18000
 
 # Immunity modifier - This is the amount that your immunity increases by each
 # time you get better from an illness.  It will add on until it reaches the
@@ -54,7 +60,7 @@ max_immunity: 800
 # This is also the amount that your immunity will lower if you die.  So if
 # you had built up to an immunity level of 40, then fell from someplace high
 # your immunity would drop by this modifier (in example, 10 - so to 30)
-immunity_modifier: 50
+immunity_modifier: 1000
 
 # Flag to indicate if the ailment should be reported in /health if symptoms aren't
 # being applied yet
@@ -89,6 +95,14 @@ is_fatal: true
 
 # Damage to apply every time the symptoms run
 damage: 3
+
+# Chance of the ailment being cured while you sleep.  This number is out of 1000
+# Lower numbers have less chance of curing the player.  Set to 0 to never cure the
+# player, or 1000 to always cure them when sleeping
+cure_with_sleep_chance: 0
+
+# Message to send to the player when they are cured by sleeping
+cure_with_sleep_message: ""
 
 # Secondary ailments can be triggered after a set amount of time.  If there is
 # no secondary ailment, comment this section out.
@@ -166,11 +180,21 @@ rust_amount: 0
 # the item from the main hand (1 in 5 chance each time symptoms are applied)
 clumsy: false
 
+# Chance out of 1000 that the player will die suddenly from this ailment
+# Set to 0 for no chance, lower number is less chance
+sudden_death_chance: 0
+
+# Message to display to the player when they suddenly die of this ailment
+sudden_death_message: ""
+
 # Flag to indicate that the ailment is caused by a fall
 caused_by_fall: false
 
 # Flag to indicate if the ailment is caused by an injury
 caused_by_injury: false
+
+# Flag to indicate if the ailment is caused by a weapon (sword, axe, projectile, stick)
+caused_by_weapon_injury: false
 
 # Flag to indicate if the ailment is caused by an explosion
 caused_by_explosion: false

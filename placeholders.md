@@ -1,6 +1,8 @@
-## Placeholders
+![Epidemic](/images/header.png)
 
 [Home](https://torpkev.github.io/epidemic_docs)
+
+## Placeholders
 
 Placeholders available via PlaceholderAPI
 

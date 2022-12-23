@@ -1,6 +1,8 @@
-## Remedies
+![Epidemic](/images/header.png)
 
 [Home](https://torpkev.github.io/epidemic_docs)
+
+## Remedies
 
 Remedies are items in-game that can be used to affect the player with one or more of a number of player effects including curing ailments, providing potion effects, modifying health/hunger/thirst, providing symptom relief and more.
 

@@ -7,6 +7,9 @@
 # points
 ########################################################################################
 
+# Remedy file version
+v: 1.0
+
 # Unique key for the custom cure
 key: "typhus_cure"
 

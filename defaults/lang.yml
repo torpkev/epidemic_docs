@@ -30,6 +30,7 @@ epidemic_bypass_on: "&aEnabling Bypass"
 epicmd_admin_usage_001: "&d/epidemic &bdebug &r- Enables/disables debug mode"
 epicmd_admin_usage_002: "&d/epidemic &breload &r- Reloads the configuration files"
 epicmd_admin_usage_003: "&d/epidemic &bversion &r- Displays the current version"
+epicmd_admin_usage_004: "&d/epigive &b<player name> <item key>"
 epicmd_bypass_usage_001: "&d/epidemic &bbypass &r- Enables/disables bypass mode"
 epicmd_recipe_usage_001: "&d/epidemic &brecipes &r-  Opens the Recipes GUI"
 command_epigive_success: "&2Item has been given to the player"
@@ -46,6 +47,9 @@ infect_error_003: "&4Unable to infect player. Invalid player - <%player%>"
 infect_usage_001: "Usage /infect &b<player> <ailment>"
 infect_usage_002: "Valid ailments are - <%ailments%>"
 # GUI
+remedy_def_gui_header: "Remedies"
+remedy_def_gui_back: "Back"
+remedy_def_gui_back_lore: "Back to Cures List"
 
 # Ailments & Afflictions
 cure_player_001: "<%player%> has been cured"
@@ -60,11 +64,14 @@ uncraftable_recipe: "This recipe is not craftable"
 craft_recipe: "This is a Crafting Table recipe"
 uses_remaining: " remaining"
 furnace_recipe: "This is a Furnace recipe"
+remedy_doctor_only: "&cSorry, that remedy can only be applied by a doctor"
+remedy_others_fail: "&cSorry, that remedy cannot be applied to other players"
 
 # Thirst
 thirst_disabled: "&cThirst is disabled, unable to use command"
 thirst_invalid_number: "&cAmount must be a whole number between 0 and 100 (example: 32)"
 thirst_invalid_player: "&cInvalid player.  Player must be online"
+thirst_update_success: "&aThirst updated for player"
 thirst_add_usage: "&lUsage: &r/thirst &badd &6<player> <amount 0-100>"
 thirst_remove_usage: "&lUsage: &r/thirst &bremove &6<player> <amount 0-100>"
 thirst_set_usage: "&lUsage: &r/thirst &bset &6<player> <amount 0-100>"
@@ -72,8 +79,50 @@ thirst_usage: "&lUsage: &r/thirst &badd&r|&bremove&r|&bset &6<player> <amount 0-
 thirst_bar_title: "Thirst"
 dirty_water: "&cThat water had something nasty in it!"
 
+# thirst_text_x values can use <%thirst%> for the actual number, example (thirst = 17):
+# thirst_text_10_19: "Thirst: <%thirst%>"  would return "Thirst: 17"
+# thirst_text_disabled_x are used when the player is invincible or in a world where
+# thirst is not enabled
+thirst_text_0: "Thirst: &4=========="
+thirst_text_1_9: "Thirst: &c=&7========="
+thirst_text_10_19: "Thirst: &e=&7========="
+thirst_text_20_29: "Thirst: &3==&7========"
+thirst_text_30_39: "Thirst: &3===&7======="
+thirst_text_40_49: "Thirst: &3====&7======"
+thirst_text_50_59: "Thirst: &3=====&7====="
+thirst_text_60_69: "Thirst: &3======&7===="
+thirst_text_70_79: "Thirst: &3=======&7==="
+thirst_text_80_89: "Thirst: &3========&7=="
+thirst_text_90_99: "Thirst: &3=========&7="
+thirst_text_100: "Thirst: &b=========="
+thirst_text_disabled_0: "Thirst: &f=========="
+thirst_text_disabled_1_9: "Thirst: &7=&f========="
+thirst_text_disabled_10_19: "Thirst: &7=&f========="
+thirst_text_disabled_20_29: "Thirst: &7==&f========"
+thirst_text_disabled_30_39: "Thirst: &7===&f======="
+thirst_text_disabled_40_49: "Thirst: &7====&f======"
+thirst_text_disabled_50_59: "Thirst: &7=====&f====="
+thirst_text_disabled_60_69: "Thirst: &7======&f===="
+thirst_text_disabled_70_79: "Thirst: &7=======&f==="
+thirst_text_disabled_80_89: "Thirst: &7========&f=="
+thirst_text_disabled_90_99: "Thirst: &7=========&f="
+thirst_text_disabled_100: "Thirst: &f=========="
+
+thirst_warning_50: "&bYou're starting to get thirsty"
+thirst_warning_title_50: "&bYou should drink as soon as possible"
+thirst_warning_20: "&6You're parched!"
+thirst_warning_title_20: "&6You need to drink soon"
+thirst_warning_10: "&4If you don't drink soon, you might die!"
+thirst_warning_title_10: "&4You're dangerously thirsty!"
+
+drink_notification: "You drink from <%source%>"
+bowl: "the bowl"
+cauldron: "the cauldron"
+bottle: "the bottle"
+hands: "your cupped hands"
+
 # Temperature
-temp_disabled: "&cThirst is disabled, unable to use command"
+temp_disabled: "&cTemperature is disabled, unable to use command"
 temp_usage: "&cSorry, that usage is not supported.  Use /temp or /temp info"
 normal: "Normal"
 hot: "Hot"
@@ -90,12 +139,18 @@ temp_cold_symptom: "&1You are too cold!"
 epidemic_bypass_title: "Bypass"
 no_craft_perm: "&cYou do not have permission to craft this item"
 inv_give_fail_nodrop_001: "&cYou are unable to accept the incoming item as your inventory is full"
+no_ailment: "No ailments"
 
-# DEPRECATED!
-boiled_water: "&bBoiled Water"
-boiled_water_lore: "&fClean drinking water"
-snowmelt_water: "&bSnow-Melt Water"
-snowmelt_water_lore: "&fClean snow-melt drinking water"
+# Doctor
+health_not_doctor: "&4Sorry, you must be a doctor"
+health_start_diagnosis: "&aDiagnosis started"
+
+# Equipment
+place_equipment: "&4You cannot place that"
+incubation_hazmat_required": "&4Sorry, you must wear a Hazmat suit to use the Incubation chamber"
+hazmat_destroyed: "&4Your Hazmat suit is damaged beyond repair"
+injected_by_player: "You feel a sharp pinch"
+
 
 # Color Codes:
 # &0 - Black

@@ -4,6 +4,9 @@
 # It is used to cure the burn ailment, but can also provides 90 seconds of cold relief
 ########################################################################################
 
+# Remedy file version
+v: 1.0
+
 # Unique key for the custom cure
 key: "cooling_compress"
 

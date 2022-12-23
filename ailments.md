@@ -1,4 +1,4 @@
-## **Ailments**
+![Epidemic](/images/header.png)
 
 [Home](https://torpkev.github.io/epidemic_docs)
 
@@ -42,6 +42,32 @@ Contagious chance boost is the amount to add on to your infectious chance if you
 
     contagious_chance_boost: 0
 
+Chance of contracting the infectious ailment when deliberately injected
+Chance is out of the random_chance in config.yml - To always have the player
+get the ailment when injected, set to same as random_chance, lower numbers
+have less chance.
+
+    deliberate_transmission_chance: 100000
+
+Applies a modifier based on biome.  A negative number would indicate less chance
+while a positive number would indicate more chance.  If we had an infectious_chance
+of 100, and a swamp modifier of 24900 it would jump to 25000 every minute. So a random
+number of 1-100000 would now be <= 25000 would get you sick instead of the 100, so a
+1/4 chance instead of a 1/1000.  You could also have an infectious_chance of 0, and
+a positive biome_infectious_chance for the biome you're in, meaning you could only
+get sick in that particular biome.  If you use a negative biome infectious chance and
+is less than the infectious chance, the overall infectious chance could drop below
+0, which would mean you cannot get that ailment in that biome.
+In example below, being in a swamp would add 500 to the 100 already applied, so a
+(500+100) = 600 in 100000 chance, but if you were in a desert, you'd have (100 + -100)
+leaving a 0 chance and therefore meaning you could not get it in the desert. However,
+if you were in Plains, your chance would be (100 + 0) = 100 as plains is not included
+Note: example does not take contagious chance boost into consideration
+
+    biome_infectious_chance:
+      SWAMP: 500
+      DESERT: -100
+
 Maximum immunity amount is the maximum immunity you can gain to infectious ailments.  Your immunity will increase based on the number of times you have recovered from an illness up the maximum set here.  The immunity is used to lower your chance of getting an ailment.  For example, if you have a maximum immunity of 100, and your current immunity is 80, and your infectious chance is 200 (with 0 boost), your new infectious chance would be 200 - 80 = 120 so you would only get the ailment if the random number generated was <= 120 instead of <= 200. 
 
     max_immunity: 0
@@ -81,7 +107,6 @@ Healed text is the message sent to the player when they are cured of an ailment.
     healed_text: "Your leg is feeling much better!"
 
 Natural cure text is the message sent to the player if they are cured of an ailment over time.  It can contain color codes and any special character allowed in-game.  If this is left blank, no message will be sent.
-**NOTE: Currently, there is no way to be cured naturally, but it is planned for 1.7.0**
 
     natural_cure_text: "Your leg has improved and you can put weight on it again"
 
@@ -105,6 +130,15 @@ break their leg again, they can get gangrene as a secondary ailment.
     secondary_ailment:
       ailment: gangrene
       time: 360
+
+Chance of the ailment being cured while you sleep.  This number is out of 1000
+Lower numbers have less chance of curing the player.  Set to 0 to never cure the
+player, or 1000 to always cure them when sleeping
+
+    cure_with_sleep_chance: 0
+
+Message to send to the player when they are cured by sleeping
+    cure_with_sleep_message: ""
 
 If temperature is enabled and Fever is true, it will cause the player to overheat more quickly, raising their core temperature.  This can cause the player to suffer temperature symptoms more easily.  Alternately, if the
 player is cold, having a Fever will warm them up and may protect them from freezing.
@@ -186,6 +220,15 @@ If Clumsy is set to true, there is a 1/5 chance each time symptoms are applied t
 
     clumsy: false
 
+Chance out of 1000 that the player will die suddenly from this ailment
+Set to 0 for no chance, lower number is less chance
+
+    sudden_death_chance: 5
+
+Message to display to the player when they suddenly die of this ailment
+
+    sudden_death_message: "Your heart can't take the strain of the plague"
+
 Caused by fall is a true/false flag that will cause the ailment to be triggered if the damage type is from a fall.  This is for non-infectious chance only.
 
     caused_by_fall: true
@@ -193,6 +236,9 @@ Caused by fall is a true/false flag that will cause the ailment to be triggered 
 Caused by injury is a true/false flag that will cause the ailment to be triggered if the damage type is from an injury, such as being hit, shot etc. This is for non-infectious chance only.
 
     caused_by_injury: true
+
+Flag to indicate if the ailment is caused by a weapon (sword, axe, projectile, stick)
+    caused_by_weapon_injury: false
 
 Caused by explosion is a true/false flag that will cause the ailment to be triggered if the damage type is explosion.  Explosion damage can be from a block such as TNT or entity such as a creeper. This is for non-infectious chance only.
 
@@ -242,16 +288,6 @@ Particle on heal is the particle effect to apply to the player when the player i
 Sound on heal is the sound to player at the players location when the player is cured of the ailment.  If you do not wish to have a sound player, comment out or remove it from the config entirely.
 
     sound_on_heal: BREWING_STAND_BREW
-
-Can Syringe is a true/false flag that indicates if a vial of blood can be extracted from the player when they have this ailment.
-**NOTE: This is for 1.7.0 update and not currently in use**
-
-    can_syringe: false
-
-Can Vaccinate is a true/false flag that indicates if the player can receive a vaccination that will increase their immunity to this ailment.
-**NOTE: This is for 1.7.0 update and not currently in use**
-
-    can_vaccinate: false
 
 Can gain immunity is a flag that indicates if the player can gain immunity to this ailment when they are cured of the ailment.
 

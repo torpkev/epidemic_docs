@@ -7,11 +7,7 @@
 # ==================================================================================
 # Plugin Settings
 # ==================================================================================
-# Most recent run version of the plugin.  DO NOT CHANGE THIS MANUALLY, it is used
-# to decide if configuration changes should be made between versions.  Modifying
-# it could cause configuration instability when updating versions and will NOT
-# be supported.
-v: 1.6.5
+
 # Afflicted time is the number of seconds that elapse between checking for
 # infectious illnesses (this includes player-player transfer).  Default is 60
 afflicted_time: 60
@@ -45,14 +41,12 @@ prevent_symptom_worlds:
 # List of WorldGuard region names where players cannot gain an ailment
 prevent_ailment_worldguard_regions:
   - spawn
-  - region2
 
 # List of WorldGuard region names where players will not experience symptoms
 prevent_symptom_worldguard_regions:
   - spawn
-  - region 4
 
-# This is the number ailment checks are run against, 10000 by default, meaning every
+# This is the number ailment checks are run against, 100000 by default, meaning every
 # time an ailment check is done (scheduled or via an event such as a burn or fall),
 # it checks 1-100000.  If your players random number is <= your ailment chance (either
 # infectious or non-infectious) your player will get sick.  To lower your chances of
@@ -64,28 +58,6 @@ random_chance: 100000
 # while in a WorldGuard region that does not allow PVP
 prevent_ailment_worldguard_pvp_deny: true
 
-# ==================================================================================
-# Syringe - THIS WILL BE MOVED TO ITS OWN CONFIG IN A FUTURE VERSION
-# Deprecated in this file as of 1.6.5
-# ==================================================================================
-# Display name of an empty syringe
-empty_syringe_name: "&aEmpty Syringe"
-# Display name of a full syringe
-full_syringe_name: "&aFull Syringe"
-# Ingredients for syringe (see relief_ingredients for usage)
-syringe_ingredients:
-  B: GLASS_BOTTLE
-  L: LEVER
-# Recipe for syringe (see relief_shape for usage)
-syringe_shape:
-  TOP: ".L."
-  MIDDLE: ".B."
-  BOTTOM: "..."
-# The text displayed to the player when they use a syringe while sick.  <%ailment%> can
-# be used to display the actual illness name
-syringe_use_sick: "You carefully draw some blood, tainted with <%ailment%> from your arm"
-# The text displayed to the player when they usage a syringe but didn't need to
-syringe_use_not_sick: "You fill the syringe with blood, but your can't do anything with it"
 # ==================================================================================
 # Crafting
 # ==================================================================================
@@ -109,8 +81,10 @@ dirty_water_penalty: true
 # This number is added to the environment modifier.  A random chance will be applied against this
 # number and can cause illness.  dirty_water_chance should be 0-1000
 dirty_water_chance: 50
-# respawn thirst level
+# respawn thirst level IF the player dies with thirst < 1, OR, if respawn_reset_thirst = true
 respawn_thirst_level: 20
+# respawn_reset_thirst - if true, when a player dies and respawns, thirst will reset to amount in reset_thirst_level
+respawn_reset_thirst: false
 # Flag to disable drinking from a cauldron
 disable_cauldron: false
 # Flag to disable water bowls (drinking from a pool)
@@ -125,6 +99,8 @@ use_thirst_text: false
 display_thirst_warning: true
 # If true, when the player drinks they will receive a notification in the action bar
 display_drink_notification: false
+# If true, drinking from a bottle will NOT trigger the dirty water check
+disable_dirty_check_from_bottle: false
 
 # ==================================================================================
 # Temperature
@@ -141,6 +117,7 @@ prevent_temp_worlds:
 temp_relief_time: 60
 # Flag to indicate if players should be warned about temperature extremes
 temp_warn_players: true
+
 # ==================================================================================
 # Debug
 # ==================================================================================

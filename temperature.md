@@ -1,7 +1,9 @@
+![Epidemic](/images/header.png)
+
+[Home](https://torpkev.github.io/epidemic_docs)
 
 ## Temperature
 
-[Home](https://torpkev.github.io/epidemic_docs)
 
 When enabled in the config file, temperature will be applied to each player in-game. Being around too much of a temperature extreme for too long will cause the player to have negative effects.
 

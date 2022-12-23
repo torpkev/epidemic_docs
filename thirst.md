@@ -1,6 +1,9 @@
-## Thirst
+![Epidemic](/images/header.png)
 
 [Home](https://torpkev.github.io/epidemic_docs)
+
+## Thirst
+
 
 When enabled in the config file, thirst will place a bar at the top of the players screen when they log in.  This
 bar will record the players thirst, the higher the bar, the higher the players hydration is.  If the bar drops

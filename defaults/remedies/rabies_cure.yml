@@ -5,6 +5,9 @@
 # weakness (and lowers amplifier by upto 3).  It also reduces thirst by 15
 ########################################################################################
 
+# Remedy file version
+v: 1.0
+
 # Unique key for the custom cure
 key: "rabies_cure"
 

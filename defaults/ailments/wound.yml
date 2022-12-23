@@ -20,7 +20,7 @@ infectious: false
 
 # Chance of getting the ailment via infectious methods
 # Chance is out of 10000.  Each time Epidemic checks for
-# infection, it generates a random number between 1 and 1000
+# infection, it generates a random number between 1 and 10000
 # in the example below, if that number <= 100, then you would
 # get the ailment.  Infection checks happen once per minute
 # so a 100 chance would be a 1/10 chance every minute
@@ -28,8 +28,8 @@ infectious_chance: 0
 
 # Chance of getting the ailment via non-infectious methods (ie. falling)
 # This is also calculated from 1-10000 random number.  However, immunity
-# modifiers will not alter this chance.
-non_infectious_chance: 250
+# modifiers will not alter this chance.  5000/10000 or 5/1000 or 5/100
+non_infectious_chance: 5000
 
 # Chance of getting the ailment boost amount from other contagious players
 # Adds this amount to the infectious chance.  So if we had an infectious_chance
@@ -37,6 +37,9 @@ non_infectious_chance: 250
 # 350 every minute. So a random number of 1-10000 would now be <= 350 would
 # get you sick instead of the 100
 contagious_chance_boost: 0
+
+# Chance of being given this ailment deliberately, as a wound cannot be transmitted, this is always 0
+deliberate_transmission_chance: 0
 
 # Maximum Immunity amount - This removes your chance of getting sick.
 # So if you had an infectious chance of 100 and a max_immunity of 90,
@@ -86,6 +89,14 @@ is_fatal: false
 
 # Damage to apply every time the symptoms run
 damage: 2
+
+# Chance of the ailment being cured while you sleep.  This number is out of 1000
+# Lower numbers have less chance of curing the player.  Set to 0 to never cure the
+# player, or 1000 to always cure them when sleeping
+cure_with_sleep_chance: 300
+
+# Message to send to the player when they are cured by sleeping
+cure_with_sleep_message: "The wound closed over while you were sleeping"
 
 # Secondary ailments can be triggered after a set amount of time.  If there is
 # no secondary ailment, comment this section out.
@@ -163,11 +174,21 @@ rust_amount: 0
 # the item from the main hand (1 in 5 chance each time symptoms are applied)
 clumsy: false
 
+# Chance out of 1000 that the player will die suddenly from this ailment
+# Set to 0 for no chance, lower number is less chance
+sudden_death_chance: 0
+
+# Message to display to the player when they suddenly die of this ailment
+sudden_death_message: ""
+
 # Flag to indicate that the ailment is caused by a fall
-caused_by_fall: true
+caused_by_fall: false
 
 # Flag to indicate if the ailment is caused by an injury
-caused_by_injury: true
+caused_by_injury: false
+
+# Flag to indicate if the ailment is caused by a weapon (sword, axe, projectile, stick)
+caused_by_weapon_injury: true
 
 # Flag to indicate if the ailment is caused by an explosion
 caused_by_explosion: true

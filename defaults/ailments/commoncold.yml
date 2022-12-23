@@ -1,12 +1,15 @@
 ########################################################################################
-# Common Cold
+# Common cold
+# The common cold is fairly easy to catch and is very contagious, however it does not
+# cause much of an issue to the player except to cause them to be overly warm (if
+# temperature is enabled).  This can lead to overheating issues
 ########################################################################################
 
 # Ailment file version
 v: 1.1
 
 # Internal key name - cannot be duplicated, no spaces/special characters
-internal_name: "commoncold"
+internal_name: "common_cold"
 
 # Display name, how it appears in-game
 display_name: "Common Cold"
@@ -15,29 +18,35 @@ display_name: "Common Cold"
 infectious: true
 
 # Chance of getting the ailment via infectious methods
-# Chance is out of 1000.  Each time Epidemic checks for
-# infection, it generates a random number between 1 and 1000
-# in the example below, if that number <= 100, then you would
+# Chance is out of 10000.  Each time Epidemic checks for
+# infection, it generates a random number between 1 and 100000
+# in the example below, if that number <= 500, then you would
 # get the ailment.  Infection checks happen once per minute
-# so a 100 chance would be a 1/10 chance every minute
-infectious_chance: 80
+# so a 500 chance would be a 500/10000 or 5/100 chance every minute
+infectious_chance: 500
 
 # Chance of getting the ailment via non-infectious methods (ie. falling)
-# This is also calculated from 1-1000 random number.  However, immunity
+# This is also calculated from 1-10000 random number.  However, immunity
 # modifiers will not alter this chance.
 non_infectious_chance: 0
 
 # Chance of getting the ailment boost amount from other contagious players
 # Adds this amount to the infectious chance.  So if we had an infectious_chance
-# of 100, with a contagious player nearby with a boost of 250, it would jump to
-# 350 every minute. So a random number of 1-1000 would now be <= 350 would
-# get you sick instead of the 100
-contagious_chance_boost: 1000
+# of 500, with a contagious player nearby with a boost of 74500, it would jump to
+# 75000 every minute. So a random number of 1-100000 would now be <= 75000 would
+# get you sick instead of the 100, so a 3/4 chance instead of a 1/1000
+contagious_chance_boost: 74500
+
+# Chance of contracting the infectious ailment when deliberately injected
+# Chance is out of the random_chance in config.yml - To always have the player
+# get the ailment when injected, set to same as random_chance, lower numbers
+# have less chance
+deliberate_transmission_chance: 100000
 
 # Maximum Immunity amount - This removes your chance of getting sick.
 # So if you had an infectious chance of 100 and a max_immunity of 90,
-# it would be 100-90 = 10.  So your 1-1000 random number with <= 100
-# leading to sickness would now be 1-1000 with <= 10 to get sick
+# it would be 100-90 = 10.  So your 1-10000 random number with <= 100
+# leading to sickness would now be 1-10000 with <= 10 to get sick
 # (assuming you have max'd out your immunity)
 max_immunity: 0
 
@@ -51,23 +60,23 @@ immunity_modifier: 0
 
 # Flag to indicate if the ailment should be reported in /health if symptoms aren't
 # being applied yet
-report_before_symptoms: true
+report_before_symptoms: false
 
 # Flag to indicate if the player should be warned when they get the ailment
-warn_on_afflicted: true
+warn_on_afflicted: false
 
 # Message to display to the player when they get the ailment
-afflicted_text: "You're all bunged up"
+afflicted_text: ""
 
 # Message to display to the player when symptoms kick in
-symptom_text: "Only breathing out one nostril is annoying"
+symptom_text: "You feel weak, cold and your lymph nodes are swollen"
 
 # Message to display to a player when they successfully cause an infection
 # Can use <%player%> for player name
-infected_other_text: "<%player> doesn't look well"
+infected_other_text: ""
 
 # Message to display to the player when they are healed by some non-natural manner
-healed_text: "You feel much better and hope the cold has run its course"
+healed_text: "The swelling has gone down and you're starting to feel more like yourself"
 
 # Message to display to the player when they are healed naturally (over time)
 natural_cure_text: "You're starting to feel better"
@@ -83,14 +92,21 @@ is_fatal: false
 # Damage to apply every time the symptoms run
 damage: 0
 
+# Chance of the ailment being cured while you sleep.  This number is out of 1000
+# Lower numbers have less chance of curing the player.  Set to 0 to never cure the
+# player, or 1000 to always cure them when sleeping
+cure_with_sleep_chance: 200
+
+# Message to send to the player when they are cured by sleeping
+cure_with_sleep_message: "The sleep did you good, and you're no longer sniffling"
+
 # Secondary ailments can be triggered after a set amount of time.  If there is
 # no secondary ailment, comment this section out.
 # secondary_ailment.ailment is the internal name of the ailment to apply
 # secondary_ailment.time is the number of seconds until it is applied
 #secondary_ailment:
-#  ailment: typhus_2
-#  time: 600
-
+#  ailment:
+#  time:
 
 # If temperature is enabled, fever will cause the player to overheat quicker
 # Alternately, if they are cold, this will keep them warmer
@@ -140,7 +156,7 @@ insomnia: false
 hallucination: false
 
 # Flag to indicate if the players chat should turn into gibberish as a symptom
-gibberish: false
+gibberish: true
 
 # Flag to indicate if the players food should rot away as a symptom
 # Bowls/bottles will be replaced with empties
@@ -160,11 +176,21 @@ rust_amount: 0
 # the item from the main hand (1 in 5 chance each time symptoms are applied)
 clumsy: false
 
+# Chance out of 1000 that the player will die suddenly from this ailment
+# Set to 0 for no chance, lower number is less chance
+sudden_death_chance: 0
+
+# Message to display to the player when they suddenly die of this ailment
+sudden_death_message: ""
+
 # Flag to indicate that the ailment is caused by a fall
 caused_by_fall: false
 
 # Flag to indicate if the ailment is caused by an injury
 caused_by_injury: false
+
+# Flag to indicate if the ailment is caused by a weapon (sword, axe, projectile, stick)
+caused_by_weapon_injury: false
 
 # Flag to indicate if the ailment is caused by an explosion
 caused_by_explosion: false

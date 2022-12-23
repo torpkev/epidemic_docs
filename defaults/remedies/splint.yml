@@ -5,6 +5,9 @@
 # It reduces slowness by up to 10 seconds and amplifier by upto 1 point
 ########################################################################################
 
+# Remedy file version
+v: 1.0
+
 # Unique key for the custom cure
 key: "splint"
 
@@ -65,7 +68,7 @@ recipe:
 food: false
 
 # If set, item is a drink (must be drinkable).  Remedy will trigger after consuming it
-drink: true
+drink: false
 
 # item_consumed is for NON-FOOD/DRINK ONLY - (items, not edible)
 # If item_consumed is true, then the item is removed/replaced from the player

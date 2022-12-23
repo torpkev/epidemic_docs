@@ -1,0 +1,122 @@
+###################################################################################################
+# lang.yml
+# This file can be used to modify any text in-game.  Color codes can be used throughout, the list
+# of codes are at the bottom of this file.  Anywhere you see a word inside <% %> it means it is
+# a placeholder for some information from the game.  These can NOT be translated.  If you do try
+# to translate these, Epidemic will not know where to put the internal value.  The internal values
+# should be language agnostic, so no translation is needed.  (Frequently these internal values
+# come from the ailment and remedy configuration files which can also be updated.
+# If a value is missing from this file, when it is called in-game, it will write the default value
+# into this file.
+# Please be sure to back this file up if you have translated it.  Updates may replace this file
+# without warning.
+###################################################################################################
+
+# Prefix
+prefix: "&2[&fEpidemic&2]&r "
+
+# Commands
+command_no_perm_001: "&4You do not have permission to use this command"
+cure_invalid_player_001: "Unable to cure player. Invalid player - <%player%>"
+cure_usage_001: "Usage &1/cure &b<player> <ailment>"
+command_online_only_001: "&cThis command can only be used by online players"
+epidemic_debug_on_001: "&aDebug mode enabled"
+epidemic_debug_off_001: "&cDebug mode disabled"
+epidemic_reload_configuration_001: "Reloading configuration.."
+epidemic_reload_configuration_002: "&aReload complete"
+epidemic_get_version_001: "<%name%> - Version <%ver%>"
+epidemic_bypass_off: "&cDisabled Bypass"
+epidemic_bypass_on: "&aEnabling Bypass"
+epicmd_admin_usage_001: "&d/epidemic &bdebug &r- Enables/disables debug mode"
+epicmd_admin_usage_002: "&d/epidemic &breload &r- Reloads the configuration files"
+epicmd_admin_usage_003: "&d/epidemic &bversion &r- Displays the current version"
+epicmd_bypass_usage_001: "&d/epidemic &bbypass &r- Enables/disables bypass mode"
+epicmd_recipe_usage_001: "&d/epidemic &brecipes &r-  Opens the Recipes GUI"
+command_epigive_success: "&2Item has been given to the player"
+command_epigive_invaliditem: "&cERROR &r- Invalid Item"
+command_epigive_invalidplayer: "&cERROR &r- Invalid Player or player is offline"
+command_epigive_usage:  "&lUsage: &r/epigive &b<player name> <item key>"
+health_usage_001: "Usage /health"
+health_header_001: "&6       &lEpidemic - Health"
+health_header_002: "Ailment - <%ailment%>"
+health_no_ailment_001: "&4No ailment found"
+infect_error_004: "&4You can't infect yourself"
+infect_error_002: "&4Invalid ailment. Ailment entered - &b<%ailment%>"
+infect_error_003: "&4Unable to infect player. Invalid player - <%player%>"
+infect_usage_001: "Usage /infect &b<player> <ailment>"
+infect_usage_002: "Valid ailments are - <%ailments%>"
+# GUI
+
+# Ailments & Afflictions
+cure_player_001: "<%player%> has been cured"
+cure_player_002: "<%player%> does not need to be cured"
+has_insomnia: "You cannot sleep - the insomnia is wearing away at you"
+mute_player: "&cYou can't talk right now"
+food_rot: "Your food has been tainted and rotted away"
+afflictplayer_infect_success: "&2<%player%> has been afflicted"
+
+# Remedies
+uncraftable_recipe: "This recipe is not craftable"
+craft_recipe: "This is a Crafting Table recipe"
+uses_remaining: " remaining"
+furnace_recipe: "This is a Furnace recipe"
+
+# Thirst
+thirst_disabled: "&cThirst is disabled, unable to use command"
+thirst_invalid_number: "&cAmount must be a whole number between 0 and 100 (example: 32)"
+thirst_invalid_player: "&cInvalid player.  Player must be online"
+thirst_add_usage: "&lUsage: &r/thirst &badd &6<player> <amount 0-100>"
+thirst_remove_usage: "&lUsage: &r/thirst &bremove &6<player> <amount 0-100>"
+thirst_set_usage: "&lUsage: &r/thirst &bset &6<player> <amount 0-100>"
+thirst_usage: "&lUsage: &r/thirst &badd&r|&bremove&r|&bset &6<player> <amount 0-100>"
+thirst_bar_title: "Thirst"
+dirty_water: "&cThat water had something nasty in it!"
+
+# Temperature
+temp_disabled: "&cThirst is disabled, unable to use command"
+temp_usage: "&cSorry, that usage is not supported.  Use /temp or /temp info"
+normal: "Normal"
+hot: "Hot"
+cold: "Cold"
+thermometer_hot: "H"
+thermometer_cold: "C"
+temp_info: "Overall: <%level%>,Temperature: <%temp%>, Core: <%core%>, Ambient: <%ambient%>, Ailment(s): <%ailments%>"
+temp_getting_hot: "&cYou are starting to get too hot"
+temp_getting_cold: "&9You are starting to get too cold"
+temp_hot_symptom: "&4You are too hot!"
+temp_cold_symptom: "&1You are too cold!"
+
+# Misc
+epidemic_bypass_title: "Bypass"
+no_craft_perm: "&cYou do not have permission to craft this item"
+inv_give_fail_nodrop_001: "&cYou are unable to accept the incoming item as your inventory is full"
+
+# DEPRECATED!
+boiled_water: "&bBoiled Water"
+boiled_water_lore: "&fClean drinking water"
+snowmelt_water: "&bSnow-Melt Water"
+snowmelt_water_lore: "&fClean snow-melt drinking water"
+
+# Color Codes:
+# &0 - Black
+# &1 - Dark Blue
+# &2 - Dark Green
+# &3 - Dark Aqua
+# &4 - Dark Red
+# &5 - Dark Purple
+# &6 - Gold
+# &7 - Gray
+# &8 - Dark Gray
+# &9 - Blue
+# &a - Green
+# &b - Aqua
+# &c - Red
+# &d - Light Purple
+# &e - Yellow
+# &f - White
+# &k - Magic
+# &l - Bold
+# &m - Strikethrough
+# &n - Underline
+# &o - Italic
+# &r - Reset

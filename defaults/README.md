@@ -1,21 +1,95 @@
-## Default Files
+![Epidemic](/images/header.png)
 
 [Home](https://torpkev.github.io/epidemic_docs)
 
-Epidemic has a config.yml file created in the Epidemic plugin folder which can be modified as needed.  However, the key "v" should never be changed manually.  It looks like this:
+## Defaults
 
-    v: 1.6.5
+Epidemic can be configured and modified extensively through the config files.  With them, you can turn things like thirst and temperature on or off, or create completely new diseases, injuries, and remedies!
 
+You can also modify the language used in the plugin, or just change the wording to suit your server.
 
-This key is used during upgrades and conversions to move things into their proper version.
+With how configurable Epidemic is, sometimes it is easy to break a config file, so all the default files are available here so you can roll back to a prior version.
 
-The rest of the config can be modified to suit your own purposes.  If you ever need to due to a mistake, you can simply delete the config.yml and it will regenerate, or, you can pull a copy from here: [config.yml](https://torpkev.github.io/epidemic_docs/defaults/config.yml)
+And you can always feel free to ask on Discord if you're having trouble with a file!
 
-The language file lang.yml is also created in the Epidemic plugin folder.  This file contains a code<>text list of messages sent to the player in-game.  All player facing messages are listed in this file (if you find text in game you can't modify, please let me know!).  
-You can modify this file as needed in order to properly translate the game for yourself.  Please do NOT change anything in <% %> tags as these are placeholders for game data.  For example <%ailments%>.  If you translate the word ailments in the tag, the plugin will not know what to substitute the tag for.
-If an entry is missing, it will default to the English translation.
-(Note: If you translate the lang.yml file completely and would like it hosted here for others to use, please let me know).  You can get a copy of the lang.yml file here: [lang.yml](https://torpkev.github.io/epidemic_docs/defaults/lang.yml)
+[config.yml](https://torpkev.github.io/epidemic_docs/defaults/config.yml)
 
-Ailments - Ailment files are created during startup (if upgrading, they are converted and will not include the defaults).  You can view the defaults here: [Ailments](https://torpkev.github.io/epidemic_docs/defaults/ailments)
+[lang.yml](https://torpkev.github.io/epidemic_docs/defaults/lang.yml)
 
-Remedies - Remedy files are created during startup )if upgrading, they are converted from your current Ailment cures, and will not include the defaults).  You can view the defaults here: [Remedies](https://torpkev.github.io/epidemic_docs/defaults/remedies)
+### Ailments
+
+Ailments are the injuries and diseases you create in the server.  Epidemic comes 'out-the-box' with some simple examples, however, you are encouraged to not only modify these, but to create your own using the same framework.
+
+[broken_leg.yml](https://torpkev.github.io/epidemic_docs/defaults/ailments/broken_leg.yml)
+
+[bubonic_plague.yml](https://torpkev.github.io/epidemic_docs/defaults/ailments/bubonic_plague.yml)
+
+[burn.yml](https://torpkev.github.io/epidemic_docs/defaults/ailments/burn.yml)
+
+[commoncold.yml](https://torpkev.github.io/epidemic_docs/defaults/ailments/commoncold.yml)
+
+[gangrene.yml](https://torpkev.github.io/epidemic_docs/defaults/ailments/gangrene.yml)
+
+[rabies.yml](https://torpkev.github.io/epidemic_docs/defaults/ailments/rabies.yml)
+
+[sepsis.yml](https://torpkev.github.io/epidemic_docs/defaults/ailments/sepsis.yml)
+
+[typhus.yml](https://torpkev.github.io/epidemic_docs/defaults/ailments/typhus.yml)
+
+[wound.yml](https://torpkev.github.io/epidemic_docs/defaults/ailments/wound.yml)
+
+### Remedies
+
+Remedies are consumables or other items that can be used to cure a player, provide symptom relief, or to craft drinks to stave off thirst.  Epidemic comes 'out-the-box' with some simple examples, however, you are encouraged to not only modify these, but to create your own using the same framework.
+
+[antibiotics.yml](https://torpkev.github.io/epidemic_docs/defaults/remedies/antibiotics.yml)
+
+[bandage.yml](https://torpkev.github.io/epidemic_docs/defaults/remedies/bandage.yml)
+
+[boiled_water.yml](https://torpkev.github.io/epidemic_docs/defaults/remedies/boiled_water.yml)
+
+[bubonic_cure.yml](https://torpkev.github.io/epidemic_docs/defaults/remedies/bubonic_cure.yml)
+
+[cane.yml](https://torpkev.github.io/epidemic_docs/defaults/remedies/cane.yml)
+
+[coldremedy.yml](https://torpkev.github.io/epidemic_docs/defaults/remedies/coldremedy.yml)
+
+[cooling_compress.yml](https://torpkev.github.io/epidemic_docs/defaults/remedies/cooling_compress.yml)
+
+[goop.yml](https://torpkev.github.io/epidemic_docs/defaults/remedies/goop.yml)
+
+[healthbar.yml](https://torpkev.github.io/epidemic_docs/defaults/remedies/healthbar.yml)
+
+[rabies_cure.yml](https://torpkev.github.io/epidemic_docs/defaults/remedies/rabies_cure.yml)
+
+[reliefdrink.yml](https://torpkev.github.io/epidemic_docs/defaults/remedies/reliefdrink.yml)
+
+[snowmelt.yml](https://torpkev.github.io/epidemic_docs/defaults/remedies/snowmelt.yml)
+
+[splint.yml](https://torpkev.github.io/epidemic_docs/defaults/remedies/splint.yml)
+
+[typhus_cure.yml](https://torpkev.github.io/epidemic_docs/defaults/remedies/typhus_cure.yml)
+
+### Equipment
+
+Equipment is configurable, however, as equipment is a new system, changes to these files are NOT currently supported.  Please use the defaults with the exception of changing name/lore for translation purposes.
+
+The equipment currently listed are set inside the plugin, you cannot create a new piece of equipment by copying a file and changing it.
+
+[empty_syringe.yml](https://torpkev.github.io/epidemic_docs/defaults/equipment/empty_syringe.yml)
+
+[full_syringe.yml](https://torpkev.github.io/epidemic_docs/defaults/equipment/full_syringe.yml)
+
+[gas_mask.yml](https://torpkev.github.io/epidemic_docs/defaults/equipment/gas_mask.yml)
+
+[hazmat_part1.yml](https://torpkev.github.io/epidemic_docs/defaults/equipment/hazmat_part1.yml)
+
+[hazmat_part2.yml](https://torpkev.github.io/epidemic_docs/defaults/equipment/hazmat_part2.yml)
+
+[hazmat_suit.yml](https://torpkev.github.io/epidemic_docs/defaults/equipment/hazmat_suit.yml)
+
+[infected_arrow.yml](https://torpkev.github.io/epidemic_docs/defaults/equipment/infected_arrow.yml)
+
+[infected_sample.yml](https://torpkev.github.io/epidemic_docs/defaults/equipment/infected_sample.yml)
+
+[infected_splash_potion.yml](https://torpkev.github.io/epidemic_docs/defaults/equipment/infected_splash_potion.yml)

@@ -1,6 +1,8 @@
-## Potion Effects
+![Epidemic](/images/header.png)
 
 [Home](https://torpkev.github.io/epidemic_docs)
+
+## Potion Effects
 
 Potion effects are used for both ailments and remedies.
 

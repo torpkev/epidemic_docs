@@ -87,11 +87,8 @@ item_consumed: true
 cures:
   - burn
   - broken_leg
-  - typhus_1
-  - typhus_2
-  - typhus_3
-  - commoncold
-  - concussion
+  - typhus
+  - common_cold
 
 # Effects to add - matches on potion effect type, then adds the time to the number
 # of seconds left on the timer (IF the potion effect is already active, if not, will

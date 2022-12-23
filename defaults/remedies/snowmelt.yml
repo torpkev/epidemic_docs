@@ -5,6 +5,9 @@
 # It reduces thirst by 50 points and provides 90 seconds of heat relief.
 ########################################################################################
 
+# Remedy file version
+v: 1.0
+
 # Unique key for the custom cure
 key: "snowmelt"
 

@@ -1,6 +1,8 @@
-## Creating New Ailments
+![Epidemic](/images/header.png)
 
 [Home](https://torpkev.github.io/epidemic_docs)
+
+## Creating New Ailments
 
 Epidemic is highly configurable, and even though it can just work out the box, where it really shines is when it is customized to work around your needs.
 
@@ -18,6 +20,6 @@ Some things to consider before creating your ailment:
 
 5) How do you want the player to recover?  Or should they?  You can make fatal ailments that will continually hurt the player until they finally die.
 
-Once you've answered these questions, you can head over to the [ailments page](https://torpkev.github.io/epidemic_docs/ailments) and review all the configuration options for creating your very own ailment.  Don't forget, you'll probably need to create some kind of Remedy (unless you're going full-on evil and want that fatal non-curable ailment)
+Once you've answered these questions, you can head over to the [ailments page](https://torpkev.github.io/epidemic_docs/ailments.md) and review all the configuration options for creating your very own ailment.  Don't forget, you'll probably need to create some kind of Remedy (unless you're going full-on evil and want that fatal non-curable ailment)
 
 If you have any questions or concerns, please don't hesitate to come speak to me on Discord.  [Discord Link](https://discord.gg/7a47xSX)

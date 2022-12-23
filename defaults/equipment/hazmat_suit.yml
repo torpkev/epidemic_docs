@@ -7,20 +7,13 @@ lore:
   - "&fA bright yellow suit that keeps out all contagious diseases"
 
 helmet:
-  item:
-    - "i:"
-    - "  ==: org.bukkit.inventory.ItemStack"
-    - "  v: 2586"
-    - "  type: PLAYER_HEAD"
-    - "  meta:"
-    - "    ==: ItemMeta"
-    - "    meta-type: SKULL"
-    - "    internal: H4sIAAAAAAAAAE3PPU7DMBiA4Q8EUgkcJknL0KFiIK1jFDvkp6YxU0lccLCbKj9V4juwcws4A/dgZmDhAAx0ZHuHZ3ktAAsukudOqdu62kglLLAOtRN1K0VzBqNW9G1Xi8YCgKMRnLK16gS8i3GshB87uWYm3LZpYqsw3DayWN00uKzk2o/t3Kv2wT8XaGf3oFmZ64Uuri87vor2BWKTwmcDT6aSoqXhKXG5hyccZT31cjtLqaYeV/wuVgRFhrjY5t6iJG5mQhRLki4HYp4ULcmYI2xTPTckfew5YpqgeY+3znQTzWYA53CMi8PEydfbh//6G1y9DL74uf/+BPgDXGLEPgYBAAA="
+  material: "PLAYER_HEAD"
+  texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjRlM2UzNmQyOGRmMTQ3NGEzZjQ2ZWVkZTBkMzNiNGQxYzNmMzhkYjE1MjM4ZTYzN2RiNDZhMzE4MWRlZjBhMSJ9fX0="
 chestplate:
   item:
     - "i:"
     - "  ==: org.bukkit.inventory.ItemStack"
-    - "  v: 2586"
+    - "  v: 1519"
     - "  type: LEATHER_CHESTPLATE"
     - "  meta:"
     - "    ==: ItemMeta"
@@ -34,7 +27,7 @@ leggings:
   item:
     - "i:"
     - "  ==: org.bukkit.inventory.ItemStack"
-    - "  v: 2586"
+    - "  v: 1519"
     - "  type: LEATHER_LEGGINGS"
     - "  meta:"
     - "    ==: ItemMeta"
@@ -48,7 +41,7 @@ boots:
   item:
     - "i:"
     - "  ==: org.bukkit.inventory.ItemStack"
-    - "  v: 2586"
+    - "  v: 1519"
     - "  type: LEATHER_BOOTS"
     - "  meta:"
     - "    ==: ItemMeta"

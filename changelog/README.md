@@ -4,6 +4,13 @@
 
 # Change Log
 
+## 1.7.0.1 - Bug fix
+
+Hazmat suit could throw a null error during ailment checking if there was something in the armor slots that was not the hazmat suit
+
+Equipment files will now auto-generate if they do not exist.
+
+---
 ## 1.7.0 - Bio-Warfare update
 
 This is a BIG update, and impacts multiple configuration files, language file, as well as significant gameplay updates.

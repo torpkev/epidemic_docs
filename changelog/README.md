@@ -4,6 +4,10 @@
 
 # Change Log
 
+## 1.7.0.2 - Bug fix
+
+Fixes a NullPointerException in PlayerInteractEvent that did not impact gameplay, but did spam the console
+
 ## 1.7.0.1 - Bug fix
 
 Hazmat suit could throw a null error during ailment checking if there was something in the armor slots that was not the hazmat suit

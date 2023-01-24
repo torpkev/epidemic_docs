@@ -6,6 +6,7 @@
 
 ## 1.7.0.2 - Bug fix
 
+---
 Fixes a NullPointerException in PlayerInteractEvent that did not impact gameplay, but did spam the console
 
 ## 1.7.0.1 - Bug fix

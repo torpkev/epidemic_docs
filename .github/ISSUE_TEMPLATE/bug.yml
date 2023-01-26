@@ -26,11 +26,11 @@ body:
     validations:
       required: true
   - type: input
-    id: minecraft
+    id: spigot
     attributes:
-      label: Minecraft Version
-      description: List the verison of minecraft, including if it is a Spigot form (example: Paper)
-      placeholder: "Minecraft Version"
+      label: Spigot Version
+      description: List the verison of Spigot. Include if this is a fork of Spigot, and what kind
+      placeholder: "Spigot Version"
     validations:
       required: true
   - type: input

@@ -18,7 +18,7 @@ body:
     validations:
       required: true
   - type: input
-    id: spigot
+    id: spigotusername
     attributes:
       label: Spigot Username
       description: Support is offered for registered purchasers and trial users.  Pleasse include your Spigot username for verification

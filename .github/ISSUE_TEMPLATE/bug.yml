@@ -1,6 +1,6 @@
 name: Bug Report
 description: File a bug report
-title: ""
+title: "Bug: "
 labels: ["bug"]
 assignees:
   - torpkev
@@ -14,7 +14,7 @@ body:
     attributes:
       label: Discord Name
       description: Please give your Discord username so I can get back to you
-      placeholder: ""
+      placeholder: "Discord Name"
     validations:
       required: true
   - type: input
@@ -22,7 +22,23 @@ body:
     attributes:
       label: Spigot Username
       description: Support is offered for registered purchasers and trial users.  Pleasse include your Spigot username for verification
-      placeholder: ""
+      placeholder: "Spigot Username"
+    validations:
+      required: true
+  - type: input
+    id: minecraft
+    attributes:
+      label: Minecraft Version
+      description: List the verison of minecraft, including if it is a Spigot form (example: Paper)
+      placeholder: "Minecraft Version"
+    validations:
+      required: true
+  - type: input
+    id: epidemic
+    attributes:
+      label: Epidemic Version
+      description: List the verison of Epidemic
+      placeholder: "Epidemic Version"
     validations:
       required: true
   - type: textarea
@@ -30,7 +46,7 @@ body:
     attributes:
       label: What happened?
       description: Please give as much information as possible
-      placeholder: ""
+      placeholder: "Information"
       value: ""
     validations:
       required: true

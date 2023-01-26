@@ -47,7 +47,6 @@ body:
       label: What happened?
       description: Please give as much information as possible
       placeholder: "Information"
-      value: ""
     validations:
       required: true
   - type: textarea

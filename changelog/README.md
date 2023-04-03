@@ -4,6 +4,11 @@
 
 # Change Log
 
+## 1.7.0.3 - Bug fix
+
+---
+Fixes an issue which caused an item to be removed from the hand of someone being healed, instead of the remedy being removed from the person applying it
+
 ## 1.7.0.2 - Bug fix
 
 ---

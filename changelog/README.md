@@ -4,6 +4,34 @@
 
 # Change Log
 
+## 1.7.1 - Hotspots!
+
+What IS a hotspot?
+- A hotspot is a block from which an ailment can spread over a set distance
+
+For example, if your server was to have a crashed meteorite, you could set a hotspot in the center of the impact crater and have the ailment spread over a 10-20 block radius, and anyone coming within that area could come down with radiation sickness or space rabies
+
+Do I HAVE to use a hotspot?
+- No, of course not, if you don't want to use hotspots, just don't set any up
+
+How do the users know where the hotspot is?
+- Right now, when the player gets close, (optional) particle effects can show the hotspot center. In the future, there may be an optional message to screen, but for now, just particles, it'll be a nice surprise for them!
+
+Do the players automatically get sick in that area?
+- No, you set up the chance of ailment in the same way you do for other ailments, if you want it to just be a minor chance they get sick in this area, set it low, if you want them always to get sick, set it high
+
+What kind of sickness do they get?
+- Any you want to set up - for the sample, I included radiation sickness - this ailment can't be gotten by any other means except by the hotspot, however, you can give them any ailment you choose
+
+How do you get cured from the hotspot ailments?
+- In the exact same way you do currently, create a remedy (in the sample, potassium iodide)
+
+Why hotspots and not vaccines!?
+- The vaccine code is taking longer than I'd like (BECAUSE IT'S AWESOME btw), and the hotspot code was already ready to go, so releasing 1.7.1 as a short term update, with vaccines coming!
+
+How do I set up a hotspot?
+- If you're a new user, a blank hotspot file is created.  If you're an existing player, you'll need to create the folder and file manually - head over to default files for samples!
+
 ## 1.7.0.3 - Bug fix
 
 ---

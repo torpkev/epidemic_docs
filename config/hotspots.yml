@@ -1,0 +1,30 @@
+# Every hotspot is listed under hotspots, with the location as the key
+# <world name>:<x>:<y>:<z>
+hotspots:
+  world:-78:64:41:
+    # ailment is the ailment to apply, this ailment key MUST exist
+    ailment: radiation
+    # chance of getting the ailment
+    chance: 90000
+    # distance from the hotspot location that the player can be impacted
+    distance: 10
+    # If you wish to show particles, set show to true, pick the RGB values, the particle size and count
+    particles:
+      show: true
+      red: 2
+      green: 135
+      blue: 20
+      size: 1
+      count: 6
+  world_nether:300:22:14:
+    ailment: space_rabies
+    chance: 5000
+    distance: 5
+    particles:
+      show: false
+      red: 0
+      green: 0
+      blue: 0
+      size: 0
+      count: 0
+      

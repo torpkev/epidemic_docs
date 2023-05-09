@@ -32,6 +32,8 @@ Ailments are the injuries and diseases you create in the server.  Epidemic comes
 
 [rabies.yml](https://torpkev.github.io/epidemic_docs/defaults/ailments/rabies.yml)
 
+[radiation.yml](https://torpkev.github.io/epidemic_docs/defaults/ailments/radiation.yml)
+
 [sepsis.yml](https://torpkev.github.io/epidemic_docs/defaults/ailments/sepsis.yml)
 
 [typhus.yml](https://torpkev.github.io/epidemic_docs/defaults/ailments/typhus.yml)
@@ -59,6 +61,8 @@ Remedies are consumables or other items that can be used to cure a player, provi
 [goop.yml](https://torpkev.github.io/epidemic_docs/defaults/remedies/goop.yml)
 
 [healthbar.yml](https://torpkev.github.io/epidemic_docs/defaults/remedies/healthbar.yml)
+
+[potassium_iodide.yml](https://torpkev.github.io/epidemic_docs/defaults/remedies/potassium_iodide.yml)
 
 [rabies_cure.yml](https://torpkev.github.io/epidemic_docs/defaults/remedies/rabies_cure.yml)
 
@@ -93,3 +97,9 @@ The equipment currently listed are set inside the plugin, you cannot create a ne
 [infected_sample.yml](https://torpkev.github.io/epidemic_docs/defaults/equipment/infected_sample.yml)
 
 [infected_splash_potion.yml](https://torpkev.github.io/epidemic_docs/defaults/equipment/infected_splash_potion.yml)
+
+### Config
+
+In upcoming versions, ailments, remedies, and equipment will be transitioned to a central config folder
+
+[hotspots.yml](https://torpkev.github.io/epidemic_docs/defaults/config/hotspots.yml)

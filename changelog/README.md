@@ -4,6 +4,19 @@
 
 # Change Log
 
+## 1/7/2 - Natural Healing
+
+This update enables the natural cures for ailments (as well as laying the groundwork for vaccines)
+
+Up until now, if you get a wound, a burn, a cold, or whatever ailments you have set up, you're stuck suffering with them until either you have them cured, or if the rare chance of healing while sleeping kicks in.
+
+This update adds a new option in the ailments files that gives a maximum number of days a player will have the ailment for
+
+    # Number of days until the ailment naturally heals - set to 0 if it does not naturally heal
+    natural_cure_days: 2
+
+Leave this value as 0 to have it not apply
+
 ## 1.7.1 - Hotspots!
 
 What IS a hotspot?

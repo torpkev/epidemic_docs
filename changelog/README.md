@@ -4,7 +4,15 @@
 
 # Change Log
 
-## 1/7/2 - Natural Healing
+## 1.7.3 - Bug Fix
+
+This update addresses a bug that threw a null exception error if you did not have a world called world
+
+Please add the following to \plugins\Epidemic\config\server.yml and replace WORLDNAME with the name of your main world
+
+    main_world: WORLDNAME
+
+## 1.7.2 - Natural Healing
 
 This update enables the natural cures for ailments (as well as laying the groundwork for vaccines)
 

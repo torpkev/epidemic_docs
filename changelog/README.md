@@ -4,6 +4,16 @@
 
 # Change Log
 
+## 1.7.4 - 1.20 support added
+
+Support added for Minecraft 1.20
+
+Removed some mutation/vaccine code and notes (its still coming, just split the branches)
+
+Startup spam has been cleanup - comma delimited lists of ailments and remedies instead of 1 line per
+
+Hotspots with no particles were throwing warnings on startup - now they don't
+
 ## 1.7.3 - Bug Fix
 
 This update addresses a bug that threw a null exception error if you did not have a world called world

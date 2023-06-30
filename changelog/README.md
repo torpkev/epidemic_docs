@@ -4,6 +4,14 @@
 
 # Change Log
 
+## 1.7.5 - Consumables Bug Fix
+
+This update addresses a single bug that prevents consumable remedies from being consumed if they are food or drink based.
+
+For example, boiled water has drink: true, and item_consumed: true - but was not reading item_consumed, and incorrectly setting to false.
+
+This resulted in consumable items never running out.
+
 ## 1.7.4 - 1.20 support added
 
 Support added for Minecraft 1.20

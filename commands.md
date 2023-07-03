@@ -20,6 +20,10 @@ Epidemic commands are as listed below
     
     /epidemic recipes - Will display the available remedies. Requires epidemic.recipes.display
 
+    /epidemic day - This will display the in-game day according to Epidemic.  Requires epidemic.admin
+
+    /epidemic invincible <player uuid or player name (if online)> <number of days> - Makes a player invincible to any epidemic ailment for the number of days listed.  Requires epidemic.admin permission
+
 /cure can be used to cure a player of an ailment
 
 

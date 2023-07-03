@@ -4,6 +4,50 @@
 
 # Change Log
 
+## 1.7.6 - New time limited invincibility
+
+This update allows you to give a player time limited invincibility. But first a little history.
+
+When Epidemic was first written, the epidemic.invincible permission existed - this would protect the player from all harm. But, people kept leaving themselves in op and had the permission, so never got sick. Following on from Domain I changed the behavior to use bypass mode. So a staff member would actively have to type in /epidemic bypass in order to become invincible.
+
+This new invincible functionality gives players time limited invincibility via a command, it also includes a config option which will give new players some time to get acclimated to the server before being afflicted. It does NOT impact /epidemic bypass which is still in use.
+
+###New commands
+
+Both new commands REQUIRE epidemic.admin permission.
+
+    /epidemic invincible <player uuid or name (if online)> <number of days>
+
+If using player name, the player MUST be online at the time.
+
+Number of days is the number of days from the in-game days - so if it is day 14, and you pick number of days = 7, they couldn't be afflicted until day 21
+
+    /epidemic day
+
+This simply returns the in-game day according to Epidemic (this is NOT the same as server day due to some plugins moving that around as they expand out days/seasons/time etc.) It is simply an arbitrary day that Epidemic will use to track game days.
+
+###Configuration Changes
+
+If you do not have a plugins\Epidemic\config\server.yml file, please create one like so
+
+    day: 0
+    main_world: world
+
+Use the name of whatever your main world is if it is not world - this is the world that Epidemic will pull the current time from.
+
+Add the following to config.yml - set to 0 to disable
+
+    new_player_invincible_days: 7
+
+If you translate Epidemic into another language, add the following to lang.yml (and then translate as needed)
+
+    command_invalid_player: "&cERROR &r- Invalid player"
+    command_epiinvicible_usage: "&lUsage: &r/epidemic &binvincible <player name or uuid> <number of days>"
+    command_epiinvicible_invaliddays: "&cERROR &r- You must enter a valid number of days (at least 1)"
+    command_epiinvicible_success: "&aPlayer has been set as invincible for <%days%> game days"
+    command_infect_invincible: "&cERROR &r- Player is invincible"
+    command_day: "&rIt is day <%day%>"
+
 ## 1.7.5 - Consumables Bug Fix
 
 This update addresses a single bug that prevents consumable remedies from being consumed if they are food or drink based.

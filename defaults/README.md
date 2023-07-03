@@ -103,3 +103,5 @@ The equipment currently listed are set inside the plugin, you cannot create a ne
 In upcoming versions, ailments, remedies, and equipment will be transitioned to a central config folder
 
 [hotspots.yml](https://torpkev.github.io/epidemic_docs/defaults/config/hotspots.yml)
+
+[server.yml](https://torpkev.github.io/epidemic_docs/defaults/config/server.yml)

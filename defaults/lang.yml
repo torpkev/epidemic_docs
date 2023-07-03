@@ -37,6 +37,14 @@ command_epigive_success: "&2Item has been given to the player"
 command_epigive_invaliditem: "&cERROR &r- Invalid Item"
 command_epigive_invalidplayer: "&cERROR &r- Invalid Player or player is offline"
 command_epigive_usage:  "&lUsage: &r/epigive &b<player name> <item key>"
+
+command_invalid_player: "&cERROR &r- Invalid player"
+command_epiinvicible_usage: "&lUsage: &r/epidemic &binvincible <player name or uuid> <number of days>"
+command_epiinvicible_invaliddays: "&cERROR &r- You must enter a valid number of days (at least 1)"
+command_epiinvicible_success: "&aPlayer has been set as invincible for <%days%> game days"
+command_infect_invincible: "&cERROR &r- Player is invincible"
+command_day: "&rIt is day <%day%>"
+
 health_usage_001: "Usage /health"
 health_header_001: "&6       &lEpidemic - Health"
 health_header_002: "Ailment - <%ailment%>"
@@ -150,28 +158,3 @@ place_equipment: "&4You cannot place that"
 incubation_hazmat_required": "&4Sorry, you must wear a Hazmat suit to use the Incubation chamber"
 hazmat_destroyed: "&4Your Hazmat suit is damaged beyond repair"
 injected_by_player: "You feel a sharp pinch"
-
-
-# Color Codes:
-# &0 - Black
-# &1 - Dark Blue
-# &2 - Dark Green
-# &3 - Dark Aqua
-# &4 - Dark Red
-# &5 - Dark Purple
-# &6 - Gold
-# &7 - Gray
-# &8 - Dark Gray
-# &9 - Blue
-# &a - Green
-# &b - Aqua
-# &c - Red
-# &d - Light Purple
-# &e - Yellow
-# &f - White
-# &k - Magic
-# &l - Bold
-# &m - Strikethrough
-# &n - Underline
-# &o - Italic
-# &r - Reset

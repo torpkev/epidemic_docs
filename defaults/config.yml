@@ -22,6 +22,10 @@ symptom_time: 20
 # Default is 10 (seconds), if you don't use PlaceholderAPI, set to -1 or remove.
 papi_update_time: 10
 
+# For new players joining the server, this is the number of in-game days to make them
+# invincible to all ailments. Set to 0 to disable
+new_player_invincible_days: 7
+
 # ==================================================================================
 # Ailment Settings
 # ==================================================================================
@@ -57,6 +61,9 @@ random_chance: 100000
 # If true, prevent_ailment_worldguard_pvp_deny will prevent players receiving symptoms or new ailments
 # while in a WorldGuard region that does not allow PVP
 prevent_ailment_worldguard_pvp_deny: true
+
+# If true, the equipment such as gas masks will be disabled
+disable_epidemic_equipment: false
 
 # ==================================================================================
 # Crafting
@@ -101,6 +108,8 @@ display_thirst_warning: true
 display_drink_notification: false
 # If true, drinking from a bottle will NOT trigger the dirty water check
 disable_dirty_check_from_bottle: false
+# Amount of damage to inflict on the player if they reach 0 hydration left
+thirst_damage: 1
 
 # ==================================================================================
 # Temperature

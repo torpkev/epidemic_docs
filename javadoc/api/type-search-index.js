@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"com.ibexmc.epidemic.api.events","l":"AfflictionEvent"},{"l":"All Classes","u":"allclasses-index.html"},{"p":"com.ibexmc.epidemic.api","l":"EpidemicAPI"},{"p":"com.ibexmc.epidemic.api.events","l":"EpidemicEvent"},{"p":"com.ibexmc.epidemic.api.events","l":"RemedyEvent"}];updateSearchResults();

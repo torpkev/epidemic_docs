@@ -4,6 +4,16 @@
 
 # Change Log
 
+## 1.7.7 - New placeholders
+
+This update adds in additional PAPI placeholder values.  You can now use %epidemic_has_<ailment_key>% which will return:
+
+    true = player has the ailment
+    false = player does not have the ailment
+    unknown = invalid ailment
+
+Ailment key is the internal key value for each ailment - so you would actually have something like %epidemic_has_broken_leg% which would return true if the players leg was broken
+
 ## 1.7.6 - New time limited invincibility
 
 This update allows you to give a player time limited invincibility. But first a little history.
